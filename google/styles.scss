@@ -5,14 +5,13 @@ $search-options:10;
 $icon-dimensions:16px;
 $search-options-padright:10px;
 /* GLOBAL STYLES */
-html{ background:$darkgreen; }
+html{ background:$lightgreen; }
 ul{ margin:0 auto; }
 ul,li{ list-style-type:none; }
 /* MAIN */
 #main{
        width:100%;text-align:center;position:relative;z-index:100;
-       background:url("images/google-logo.png") no-repeat 50% 200px;
-       h1{ color:$lightgreen; }
+       background:url("images/google-logo-darkgreen.png") no-repeat 50% 200px;
        #search-related{ padding-top:331px; }
        ul li{ float:left;
               padding:{
@@ -30,7 +29,7 @@ li a[href="http://news.google.com/nwshp?hl=en"]{ background:url("images/news-ico
 li a[href="http://books.google.com/bkshp?hl=en"]{ background:url("images/books-icon.png") no-repeat 0 0; }
 li a[href="http://www.google.com/finance"]{ background:url("images/finance-icon.png") no-repeat 0 0; }
 li a[href="http://video.google.com/?hl=en"]{ background:url("images/video-icon.png") no-repeat 0 0; }
-input{ width:561px;height:29px;text-align:center;color:darken($darkgreen,10%);font:{ size:16px;} margin:0 auto;background-color:$lightgreen;border:2px dashed darken($darkgreen,5%);}
+input{ width:561px;height:29px;text-align:center;color:lighten($lightgreen,10%);font:{ size:16px;} margin:0 auto;background-color:$darkgreen;border:2px dashed lighten($lightgreen,5%);}
 ul{ width:($icon-dimensions+$search-options-padright)*$search-options;height:26px;overflow:hidden;margin:20px auto; }
        }
 /* ASIDE */

@@ -6,7 +6,7 @@ originY=ctx.canvas.height/2;
 ctx.arc(originX,originY-75,250,0,2*Math.PI);
 ctx.arc(originX*2/3,originY-75,150,0,2*Math.PI);
 ctx.arc(originX*4/3,originY-75,150,0,2*Math.PI);
-ctx.fillStyle='#9AA640';
+ctx.fillStyle='#425B17';
 ctx.fill();
 ctx.beginPath();
 ctx.arc(originX,originY*1.5,35,0,2*Math.PI);

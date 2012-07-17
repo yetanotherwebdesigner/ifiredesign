@@ -1,7 +1,7 @@
 /* VARIABLES */
 /* GLOBAL STYLES */
 html {
-  background: #425b17; }
+  background: #9aa640; }
 
 ul {
   margin: 0 auto; }
@@ -15,9 +15,7 @@ ul, li {
   text-align: center;
   position: relative;
   z-index: 100;
-  background: url("images/google-logo.png") no-repeat 50% 200px; }
-  #main h1 {
-    color: #9aa640; }
+  background: url("images/google-logo-darkgreen.png") no-repeat 50% 200px; }
   #main #search-related {
     padding-top: 331px; }
   #main ul li {
@@ -52,11 +50,11 @@ ul, li {
     width: 561px;
     height: 29px;
     text-align: center;
-    color: #24320d;
+    color: #b3bf5a;
     font-size: 16px;
     margin: 0 auto;
-    background-color: #9aa640;
-    border: 2px dashed #334712; }
+    background-color: #425b17;
+    border: 2px dashed #abb847; }
   #main ul {
     width: 260px;
     height: 26px;
