@@ -1,0 +1,39 @@
+/* VARIABLES */
+$darkgreen:#425B17;
+$lightgreen:#9AA640;
+$search-options:10;
+$icon-dimensions:16px;
+$search-options-padright:10px;
+/* GLOBAL STYLES */
+html{ background:$darkgreen; }
+ul{ margin:0 auto; }
+ul,li{ list-style-type:none; }
+/* MAIN */
+#main{
+       width:100%;text-align:center;position:relative;z-index:100;
+       background:url("images/google-logo.png") no-repeat 50% 200px;
+       h1{ color:$lightgreen; }
+       #search-related{ padding-top:331px; }
+       ul li{ float:left;
+              padding:{
+                        right:10px;
+                        top:10px;
+                        }
+              }
+li a{ display:block;width:$icon-dimensions;height:$icon-dimensions;overflow:hidden;text-indent:-9999px; }
+li a[href="http://maps.google.com/maps?hl=en"]{ background:url("images/maps-icon.png") no-repeat 0 0; }
+li a[href="https://www.google.com/webhp?hl=en"]{ background:url("images/search-icon.png") no-repeat 0 0; }
+li a[href="https://www.google.com/imghp?hl=en"]{ background:url("images/images-icon.png") no-repeat 0 0; }
+li a[href="https://play.google.com/?hl=en"]{ background:url("images/play-icon.png") no-repeat 0 0; }
+li a[href="http://www.youtube.com"]{ background:url("images/youtube-icon.png") no-repeat 0 0; }
+li a[href="http://news.google.com/nwshp?hl=en"]{ background:url("images/news-icon.png") no-repeat 0 0; }
+li a[href="http://books.google.com/bkshp?hl=en"]{ background:url("images/books-icon.png") no-repeat 0 0; }
+li a[href="http://www.google.com/finance"]{ background:url("images/finance-icon.png") no-repeat 0 0; }
+li a[href="http://video.google.com/?hl=en"]{ background:url("images/video-icon.png") no-repeat 0 0; }
+input{ width:561px;height:29px;text-align:center;color:darken($darkgreen,10%);font:{ size:16px;} margin:0 auto;background-color:$lightgreen;border:2px dashed darken($darkgreen,5%);}
+ul{ width:($icon-dimensions+$search-options-padright)*$search-options;height:26px;overflow:hidden;margin:20px auto; }
+       }
+/* ASIDE */
+aside{ display:none;/* _hide for now_ */position:absolute;right:0; }
+/* CANVAS */
+canvas{ position:absolute;top:0;left:0;z-index:1; }
