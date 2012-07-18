@@ -1,7 +1,12 @@
 /* VARIABLES */
+/* $lightgreen:#9AA640; */
 /* GLOBAL STYLES */
 html {
-  background: #9aa640; }
+  background: #b6c74d;
+  overflow: hidden; }
+
+body {
+  min-height: 100%; }
 
 ul {
   margin: 0 auto; }
@@ -12,14 +17,17 @@ ul, li {
 /* MAIN */
 #main {
   width: 100%;
+  min-height: 700px;
+  height: 100%;
+  background: url("images/thought-balloon.png") no-repeat 50% 80px;
   text-align: center;
   position: relative;
-  z-index: 100;
-  background: url("images/google-logo-darkgreen.png") no-repeat 50% 200px; }
+  z-index: 100; }
   #main #search-related {
     padding-top: 331px; }
   #main ul li {
     float: left;
+    display: none;
     padding-right: 10px;
     padding-top: 10px; }
   #main li a {
@@ -50,22 +58,13 @@ ul, li {
     width: 561px;
     height: 29px;
     text-align: center;
-    color: #b3bf5a;
+    color: #000;
+    font-weight: bold;
     font-size: 16px;
     margin: 0 auto;
-    background-color: #425b17;
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
-    border-bottom-color: #9aa640;
-    border-left-width: 0;
-    border-left-style: none;
-    border-left-color: none;
-    border-right-width: 0;
-    border-right-style: none;
-    border-right-color: none;
-    border-top-width: 0;
-    border-top-style: none;
-    border-top-color: none; }
+    background-color: white;
+    border: none;
+    border-radius: 30px; }
   #main ul {
     width: 260px;
     height: 26px;
@@ -80,8 +79,20 @@ aside {
   right: 0; }
 
 /* CANVAS */
-canvas {
+#cv1 {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1; }
+
+#cv2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3; }
+
+#cv3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2; }

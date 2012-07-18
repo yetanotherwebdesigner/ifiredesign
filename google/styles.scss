@@ -1,19 +1,21 @@
 /* VARIABLES */
 $darkgreen:#425B17;
-$lightgreen:#9AA640;
+/* $lightgreen:#9AA640; */
+$lightgreen:#b6c74d;
+$lightgrey:#b3b3b3;
 $search-options:10;
 $icon-dimensions:16px;
 $search-options-padright:10px;
 /* GLOBAL STYLES */
-html{ background:$lightgreen; }
+html{ background:$lightgreen;overflow:hidden; }
+body{ min-height:100%; }
 ul{ margin:0 auto; }
 ul,li{ list-style-type:none; }
 /* MAIN */
 #main{
-       width:100%;text-align:center;position:relative;z-index:100;
-       background:url("images/google-logo-darkgreen.png") no-repeat 50% 200px;
+       width:100%;min-height:700px;height:100%;background:url("images/thought-balloon.png") no-repeat 50% 80px;text-align:center;position:relative;z-index:100;
        #search-related{ padding-top:331px; }
-       ul li{ float:left;
+       ul li{ float:left;display:none;
               padding:{
                         right:10px;
                         top:10px;
@@ -29,18 +31,13 @@ li a[href="http://news.google.com/nwshp?hl=en"]{ background:url("images/news-ico
 li a[href="http://books.google.com/bkshp?hl=en"]{ background:url("images/books-icon.png") no-repeat 0 0; }
 li a[href="http://www.google.com/finance"]{ background:url("images/finance-icon.png") no-repeat 0 0; }
 li a[href="http://video.google.com/?hl=en"]{ background:url("images/video-icon.png") no-repeat 0 0; }
-input{ width:561px;height:29px;text-align:center;color:lighten($lightgreen,10%);font:{ size:16px;} margin:0 auto;background-color:$darkgreen;
-border:{
-         bottom:{ width:2px;style:solid;color:$lightgreen; }
-left:{ width:0;style:none;color:none; }
-right:{ width:0;style:none;color:none; }
-top:{ width:0;style:none;color:none; }
-         }
-
-}
+input{ width:561px;height:29px;text-align:center;color:#000;font:{ weight:bold;size:16px;} margin:0 auto;background-color:lighten($lightgrey,50);
+border:none;border-radius:30px;}
 ul{ width:($icon-dimensions+$search-options-padright)*$search-options;height:26px;overflow:hidden;margin:20px auto; }
        }
 /* ASIDE */
 aside{ display:none;/* _hide for now_ */position:absolute;right:0; }
 /* CANVAS */
-canvas{ position:absolute;top:0;left:0;z-index:1; }
+#cv1{ position:absolute;top:0;left:0;z-index:1; }
+#cv2{ position:absolute;top:0;left:0;z-index:3; }
+#cv3{ position:absolute;top:0;left:0;z-index:2; }
