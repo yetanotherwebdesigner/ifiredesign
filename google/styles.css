@@ -54,7 +54,18 @@ ul, li {
     font-size: 16px;
     margin: 0 auto;
     background-color: #425b17;
-    border: 2px dashed #abb847; }
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #9aa640;
+    border-left-width: 0;
+    border-left-style: none;
+    border-left-color: none;
+    border-right-width: 0;
+    border-right-style: none;
+    border-right-color: none;
+    border-top-width: 0;
+    border-top-style: none;
+    border-top-color: none; }
   #main ul {
     width: 260px;
     height: 26px;
