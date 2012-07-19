@@ -1,8 +1,9 @@
 /* VARIABLES */
+/* $darkgreen:#425B17; */
 /* $lightgreen:#9AA640; */
 /* GLOBAL STYLES */
 html {
-  background: #b6c74d;
+  background: #161e07;
   overflow: hidden; }
 
 body {
@@ -19,7 +20,7 @@ ul, li {
   width: 100%;
   min-height: 700px;
   height: 100%;
-  background: url("images/thought-balloon.png") no-repeat 50% 80px;
+  /* background:url("images/thought-balloon.png") no-repeat 50% 80px; */
   text-align: center;
   position: relative;
   z-index: 100; }
@@ -54,17 +55,25 @@ ul, li {
     background: url("images/finance-icon.png") no-repeat 0 0; }
   #main li a[href="http://video.google.com/?hl=en"] {
     background: url("images/video-icon.png") no-repeat 0 0; }
-  #main input {
+  #main form {
     width: 561px;
+    margin: 0 auto; }
+  #main input {
+    display: none;
+    font-family: 'ScratchRegular',Arial,sans-serif;
+    width: 373px;
     height: 29px;
-    text-align: center;
+    margin-left: 0;
     color: #000;
     font-weight: bold;
     font-size: 16px;
-    margin: 0 auto;
     background-color: white;
-    border: none;
-    border-radius: 30px; }
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #000;
+    border-left-style: none;
+    border-right-style: none;
+    border-top-style: none; }
   #main ul {
     width: 260px;
     height: 26px;
@@ -79,20 +88,37 @@ aside {
   right: 0; }
 
 /* CANVAS */
-#cv1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1; }
-
-#cv2 {
+#main-balloon {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 3; }
 
-#cv3 {
+.no-canvas canvas {
+  width: 100%;
+  height: 100%; }
+
+.no-canvas #main-balloon img {
+  width: 650px;
+  display: block;
+  margin: 80px auto 0; }
+
+#dots {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 2; }
+
+.no-canvas #dots {
+  background: url("images/dots-bg.png") repeat 0 0;
+  opacity: .1;
+  filter: alpha(opacity=10); }
+
+.no-canvas #gradient {
+  background: url("images/gradient-bg.png") repeat-x 0 50%; }
+
+#gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; }

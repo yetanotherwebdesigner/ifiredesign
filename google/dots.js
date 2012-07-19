@@ -3,7 +3,6 @@ spacing=16,
 dimension=10;
 dotsCtx.canvas.width=document.documentElement.clientWidth*1.3;
 dotsCtx.canvas.height=document.documentElement.clientHeight*1.9;
-console.log('canvas height is: '+dotsCtx.canvas.height+'canvas width is '+dotsCtx.canvas.width);
 dotsCtx.globalAlpha=".1";
 dotsCtx.fillStyle='#425B17';
 dotsCtx.rotate(-Math.PI/12);
