@@ -60,20 +60,25 @@ ul, li {
     margin: 0 auto; }
   #main input {
     display: none;
+    text-align: center;
     font-family: 'ScratchRegular',Arial,sans-serif;
+    font-size: 16px;
     width: 373px;
     height: 29px;
-    margin-left: 0;
-    color: #000;
+    margin: 0 auto;
+    color: #333;
     font-weight: bold;
     font-size: 16px;
-    background-color: white;
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
-    border-bottom-color: #000;
-    border-left-style: none;
+    background-color: #e6e6e6;
+    border-radius: 20px;
+    border-bottom-style: none;
+    border-left-style: solid;
+    border-left-width: 5px;
+    border-left-color: #cdcdcd;
     border-right-style: none;
-    border-top-style: none; }
+    border-top-style: solid;
+    border-top-width: 3px;
+    border-top-color: #cdcdcd; }
   #main ul {
     width: 260px;
     height: 26px;
@@ -88,11 +93,22 @@ aside {
   right: 0; }
 
 /* CANVAS */
-#main-balloon {
+.canvas canvas {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0; }
+
+#icons {
   z-index: 3; }
+
+#main-balloon {
+  z-index: 4; }
+
+#dots {
+  z-index: 2; }
+
+#gradient {
+  z-index: 1; }
 
 .no-canvas canvas {
   width: 100%;
@@ -103,12 +119,6 @@ aside {
   display: block;
   margin: 80px auto 0; }
 
-#dots {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2; }
-
 .no-canvas #dots {
   background: url("images/dots-bg.png") repeat 0 0;
   opacity: .1;
@@ -117,8 +127,5 @@ aside {
 .no-canvas #gradient {
   background: url("images/gradient-bg.png") repeat-x 0 50%; }
 
-#gradient {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1; }
+.no-canvas #icons {
+  display: none; }
