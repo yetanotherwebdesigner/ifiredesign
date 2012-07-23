@@ -33,23 +33,28 @@ function handleImageError(){
     throw new Error("Image not loaded. Please check your Internet connection.");
 }
 function blowBalloon(){
-    stage=new createjs.Stage(bCanvas);
-    bmp=new createjs.Bitmap(img);
+    stage=new Stage(bCanvas);
+    bmp=new Bitmap(img);
     bmp.regX=img.width>>1;
     bmp.regY=img.height>>1;
     bmp.x=originX;
-    bmp.y=originY;
+    bmp.y=cHeight;
     bmp.scaleX=bmp.scaleY=0;
     stage.addChild(bmp);
-    stage.update();
-    createjs.Ticker.addListener(window);
-    createjs.Ticker.setFPS(20);
+    Tween.get(bmp,{loop:false})
+    .to({y:originY,scaleX:1,scaleY:1},2000,Ease.get(1))
+    .call(function(){$('input').fadeIn('fast');});
+//    stage.update();
+//    createjs.Ticker.addListener(window);
+
+    Ticker.setFPS(20);
+    Ticker.addListener(stage,false);
 }
-function tick(){
+/*function tick(){
     if(ratio<Math.PI/2)	ratio+=Math.PI/125;
     else $('input').fadeIn('fast');
     var sineValue=Math.sin(ratio);
     bmp.setTransform(bmp.x,bmp.y,bmp.scaleX,bmp.scaleY,0,0,0,bmp.regX,bmp.regY);
     bmp.scaleX = bmp.scaleY = sineValue;
     stage.update();
-}
+}*/
