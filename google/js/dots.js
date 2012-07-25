@@ -1,9 +1,8 @@
 function drawDots(){
-    var dotsCtx=document.getElementsByTagName('canvas')[1].getContext('2d'),
-    spacing=16,
-    dimension=10;
-    dotsCtx.canvas.width=document.documentElement.clientWidth*1.3;
-    dotsCtx.canvas.height=document.documentElement.clientHeight*1.9;
+    var dotsCtx=document.getElementById('dots').getContext('2d'),
+    spacing=16,dimension=10;
+    dotsCtx.canvas.width*=1.3;
+    dotsCtx.canvas.height*=1.9;
     dotsCtx.globalAlpha=".1";
     dotsCtx.fillStyle='#425B17';
     dotsCtx.rotate(-Math.PI/12);

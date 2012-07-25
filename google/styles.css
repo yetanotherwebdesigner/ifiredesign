@@ -1,9 +1,8 @@
 /* VARIABLES */
-/* $darkgreen:#425B17; */
 /* $lightgreen:#9AA640; */
 /* GLOBAL STYLES */
 html {
-  background: #161e07;
+  background: #425b17 url("images/gradient-bg.png") repeat-x 0 50%;
   overflow: hidden; }
 
 body {
@@ -93,21 +92,18 @@ aside {
   right: 0; }
 
 /* CANVAS */
-.canvas canvas {
+canvas {
   position: absolute;
   top: 0;
   left: 0; }
 
 #icons {
-  z-index: 3; }
-
-#main-balloon {
-  z-index: 4; }
-
-#dots {
   z-index: 2; }
 
-#gradient {
+#main-balloon {
+  z-index: 3; }
+
+#dots {
   z-index: 1; }
 
 .no-canvas canvas {
