@@ -2,7 +2,7 @@ function drawIcons(){
     var iCtx=document.getElementById('icons').getContext('2d');
     iCtx.globalAlpha=".1";
     var iStage=new Stage(iCtx.canvas);
-    var coffee=new Image,restaurant=new Image,cocktail=new Image,atm=new Image;
+    var coffee=new Image,restaurant=new Image,cocktail=new Image,atm=new Image,shirt=new Image,cab=new Image,house=new Image;
     coffee.src='images/coffee-icon.png';
     coffee.onerror=handleImageError;
     coffee.onload=oite(coffee);
@@ -15,6 +15,15 @@ function drawIcons(){
     atm.src='images/atm-icon.png';
     atm.onerror=handleImageError;
     atm.onload=oite(atm);
+    shirt.src='images/shirt-icon.png';
+    shirt.onerror=handleImageError;
+    shirt.onload=oite(shirt);
+    cab.src='images/cab-icon.png';
+    cab.onerror=handleImageError;
+    cab.onload=oite(cab);
+    house.src='images/house-icon.png';
+    house.onerror=handleImageError;
+    house.onload=oite(house);    
     function oite(img){
 	for(var i=0;i<Math.floor(Math.random()*100);i++){
 	    var bmp=new Bitmap(img),random=Math.random();;
@@ -24,10 +33,9 @@ function drawIcons(){
 	    bmp.y=Math.random()*cHeight;
 	    bmp.scaleX=bmp.scaleY=random;
 	    bmp.rotation=Math.sin(random)*360;
-	    bmp.alpha=random>.5?random-.45:+.45;
+	    bmp.alpha=random>.5?random/2:random*2;
 	    iStage.addChild(bmp);
 	}
 	Ticker.addListener(iStage);	
     }
-
 }
