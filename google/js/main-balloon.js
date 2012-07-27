@@ -1,5 +1,5 @@
 var bCanvas=document.getElementById('main-balloon'),
-balloonCtx=bCanvas.getContext('2d'),mainBalloon=new Image;
+balloonCtx=bCanvas.getContext('2d'),mainBalloon=new Image,imgRatio=0.634765625;
 /* EaselJS Enabled Animation */
 var bStage,img,bmp,ratio;
 //initialize function

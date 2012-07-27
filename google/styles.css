@@ -1,12 +1,17 @@
 /* VARIABLES */
-/* $lightgreen:#9AA640; */
+/* MIXINS */
 /* GLOBAL STYLES */
+* {
+  margin: 0;
+  padding: 0; }
+
 html {
   background: #425b17 url("images/gradient-bg.png") repeat-x 0 50%;
   overflow: hidden; }
 
 body {
-  min-height: 100%; }
+  min-height: 100%;
+  font: 13px normal Arial,sans-serif; }
 
 ul {
   margin: 0 auto; }
@@ -23,7 +28,7 @@ ul, li {
   text-align: center;
   position: relative;
   z-index: 100; }
-  #main #search-related {
+  #main #search {
     padding-top: 331px; }
   #main ul li {
     float: left;
@@ -60,7 +65,6 @@ ul, li {
   #main input {
     display: none;
     text-align: center;
-    font-family: 'ScratchRegular',Arial,sans-serif;
     font-size: 16px;
     width: 373px;
     height: 29px;
@@ -86,10 +90,42 @@ ul, li {
 
 /* ASIDE */
 aside {
-  display: none;
-  /* _hide for now_ */
+  width: 100%;
+  height: 100px;
+  background: #161e07;
+  opacity: .3;
+  color: #b6c74d;
   position: absolute;
-  right: 0; }
+  top: -90px;
+  left: 0;
+  z-index: 4;
+  padding: 20px 40px;
+  box-shadow: 0 3px 1px #161e07; }
+  aside section {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0; }
+  aside section h1 {
+    position: absolute;
+    top: 90px;
+    width: 255px;
+    line-height: 27px;
+    margin: 10px 0;
+    text-align: center; }
+  aside ul {
+    float: left; }
+    aside ul li {
+      float: left; }
+  aside #search-more h1 {
+    left: 0; }
+  aside #accounts h1 {
+    left: 256px; }
+  aside #chrome h1 {
+    left: 511px; }
+  aside #about h1 {
+    left: 766px; }
 
 /* CANVAS */
 canvas {
