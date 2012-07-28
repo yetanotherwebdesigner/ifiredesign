@@ -22,8 +22,7 @@
     </div>
     <aside>
       <section id="search-more">
-	<h1>Search More</h1>
-	<ul>
+	<ul id="search-more-o">
 	  <li><a href="https://www.google.com/webhp?hl=en">Search</a></li>
 	  <li><a href="https://www.google.com/imghp?hl=en">Images</a></li>
 	  <li><a href="http://maps.google.com/maps?hl=en">Maps</a></li>
@@ -38,9 +37,8 @@
 	</ul>
       </section>
       <section id="accounts">
-	<h1>Accounts</h1>
-	<a href="https://accounts.google.com/ServiceLogin?hl=en&continue=https://www.google.com/">Sign in</a>
-	<ul>
+	<ul id="accounts-o">
+	  <li><a href="https://accounts.google.com/ServiceLogin?hl=en&continue=https://www.google.com/">Sign in</a></li>
 	  <li><a href="https://plus.google.com/?gpsrc=ogpy0">+You</a></li>
 	  <li><a href="https://mail.google.com/mail/">Gmail</a></li>
 	  <li><a href="https://docs.google.com/">Documents</a></li>
@@ -53,15 +51,15 @@
 	</ul>
       </section>
       <section id="chrome">
-	<h1>Chrome</h1>
-	<span>A faster way to browse the web</span>
-	<a href="https://www.google.com/chrome/index.html?hl=en">Install Google Chrome</a>
-<!--	<img src="images/chrome-logo.png" width="48" height="48" alt="Chrome logo">-->
-	<span class="xbtn">&times;</span>
+	<div id="chrome-more">
+	  <span>A faster way to browse the web</span>
+	  <a href="https://www.google.com/chrome/index.html?hl=en">Install Google Chrome</a>
+	  <!--	<img src="images/chrome-logo.png" width="48" height="48" alt="Chrome logo">-->
+	  <span class="xbtn">&times;</span>
+	</div>
       </section>
       <section id="about">
-	<h1>Google</h1>
-	<ul>
+	<ul id="about-o">
 	  <li><a href="https://www.google.com/intl/en/ads/">Advertising&nbsp;Programs</a></li>
 	  <li><a href="https://www.google.com/services/">Business Solutions</a></li>
 	  <li><a href="https://www.google.com/intl/en/policies/">Privacy &amp; Terms</a></li>
@@ -69,6 +67,12 @@
 	  <li><a href="https://www.google.com/intl/en/about.html">About Google</a></li>
       </section>
     </aside>
+    <nav>
+      <a href="#search-more-o">Search More</a>
+      <a href="#accounts-o">Accounts</a>
+      <a href="#chrome-more">Chrome</a>
+      <a href="#about-o">Google</a>
+    </nav>
     <canvas id="main-balloon"><img src="images/thought-balloon.png" alt="A thought balloon with the 'Google' logo on it"></canvas>
     <canvas id="dots"></canvas>
     <canvas id="icons"></canvas>                 

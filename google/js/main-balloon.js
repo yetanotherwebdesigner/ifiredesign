@@ -34,7 +34,7 @@ function blowBalloon(){
     bmp.scaleX=bmp.scaleY=0;
     bStage.addChild(bmp);
     Tween.get(bmp,{loop:false})
-    .to({y:originY,scaleX:1,scaleY:1},2000,Ease.get(1))
+    .to({y:originY+20,scaleX:1,scaleY:1},2000,Ease.get(1))
     .call(function(){$('input').fadeIn('fast').focus();});
     Ticker.setFPS(20);
     Ticker.addListener(bStage,false);
