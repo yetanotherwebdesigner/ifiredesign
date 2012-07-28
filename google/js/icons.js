@@ -2,7 +2,7 @@ function drawIcons(){
     var iCtx=document.getElementById('icons').getContext('2d');
     iCtx.globalAlpha=".1";
     var iStage=new Stage(iCtx.canvas);
-    var coffee=new Image,restaurant=new Image,cocktail=new Image,atm=new Image,shirt=new Image,cab=new Image,house=new Image;
+    var coffee=new Image,restaurant=new Image,cocktail=new Image,atm=new Image,shirt=new Image,cab=new Image,house=new Image,flower=new Image;
     coffee.src='images/coffee-icon.png';
     coffee.onerror=handleImageError;
     coffee.onload=oite(coffee);
@@ -23,7 +23,10 @@ function drawIcons(){
     cab.onload=oite(cab);
     house.src='images/house-icon.png';
     house.onerror=handleImageError;
-    house.onload=oite(house);    
+    house.onload=oite(house);
+    flower.src='images/flower-icon.png';
+    flower.onerror=handleImageError;
+    flower.onload=oite(flower);
     function oite(img){
 	for(var i=0;i<Math.floor(Math.random()*100);i++){
 	    var bmp=new Bitmap(img),random=Math.random();;
