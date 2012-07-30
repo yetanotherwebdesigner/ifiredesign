@@ -67,7 +67,7 @@ ul, li {
     overflow: hidden;
     margin: 20px auto; }
 
-/* ASIDE */
+/* NAV */
 nav {
   width: 100%;
   height: 20px;
@@ -96,10 +96,6 @@ nav {
       outline: none;
       margin-top: 5px; }
 
-aside {
-  display: none;
-  /* temporarily hide */ }
-
 a[href|="#about"] {
   left: 0; }
 
@@ -112,15 +108,22 @@ a[href|="#accounts"] {
 a[href|="#search"] {
   left: 766px; }
 
-section#search-more {
+/* SECTIONS > SEARCH MORE */
+.whisper {
+  display: none;
   position: absolute;
-  left: 1600px;
   top: 60px;
   z-index: 7;
-  background: white;
+  background: #b6c74d;
   width: 100%;
   height: 100%;
   min-height: 684px; }
+
+#ltr {
+  left: -3000px; }
+
+#rtl {
+  left: 3000px; }
 
 /* CANVAS */
 canvas {
