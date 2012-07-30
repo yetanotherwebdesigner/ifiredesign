@@ -1,5 +1,8 @@
-var out=0;
-var lastAccessed;
+var out=0,
+windowWidth=$(window).width(),
+lastAccessed;
+$("#ltr").css({left:-windowWidth});
+$("#rtl").css({left:windowWidth});
 $("nav a").click(function(e){
 		     e.preventDefault();
 		     var targetContent=$(this).attr("href").slice(0,-2);
@@ -30,13 +33,17 @@ ABORTED FOR NOW COZ ANNOYING
 		 });*/
 function slideIn(targetContent){
     if(targetContent=="#search-more"||targetContent=="#chrome")
-	$("#rtl").css({display:"block",left:0}).html($(targetContent).html());
+	$("#rtl").css({display:"block"}).animate({left:0},'fast','easeInQuint').html($(targetContent).html());
     else if(targetContent=="#accounts"||targetContent=="#about")
-    	$("#ltr").css({display:"block",left:0}).html($(targetContent).html());
+    	$("#ltr").css({display:"block"}).animate({left:0},'fast','easeInQuint').html($(targetContent).html());
 }
 function slideOut(targetContent){
-    if(targetContent=="#search-more"||targetContent=="#chrome")
-	$("#rtl").css({display:"none",left:"3000px"}).html("");
-    else if(targetContent=="#accounts"||targetContent=="#about")
-	$("#ltr").css({display:"none",left:"-3000px"}).html("");
+    if(targetContent=="#search-more"||targetContent=="#chrome"){
+	$("#rtl").animate({left:windowWidth},'fast','easeOutQuint').html("");
+	//$("#rtl").css({display:"none"});
+    }
+    else if(targetContent=="#accounts"||targetContent=="#about"){
+	$("#ltr").animate({left:-windowWidth-7},'fast','easeOutQuint').html("");
+//    	$("#ltr").css({display:"none"});
+    }
 }

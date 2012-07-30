@@ -120,10 +120,10 @@ a[href|="#search"] {
   min-height: 684px; }
 
 #ltr {
-  left: -3000px; }
+  border-right: 7px solid #9bab36; }
 
 #rtl {
-  left: 3000px; }
+  border-left: 7px solid #9bab36; }
 
 /* CANVAS */
 canvas {
