@@ -1,51 +1,50 @@
-var out=0,
-wWidth=$(window).width(),wHeight=$(window).height(),
-lastAccessed;
-console.log(wWidth,wHeight);
-$("#ltr").css({left:-wWidth});
-$("#rtl").css({left:wWidth});
+var wWidth=$(window).width(),wHeight=$(window).height(),
+out=0,lastAccessed;
+$("#search-more").css({left:wWidth,height:((wHeight-60)*5/16)|0});
+$("#accounts").css({left:-wWidth,top:60+((wHeight-60)*5/16)|0,height:((wHeight-60)*5/16)});
+$("#chrome").css({left:wWidth,top:60+((wHeight-60)*5/8)|0,height:((wHeight-60)/4)});
+$("#about").css({left:-wWidth,top:60+((wHeight-60)*7/8)|0,height:((wHeight-60)/8)});
+var whispers=[{ id:"#search-more",out:0},{ id:"#accounts",out:0},{ id:"#chrome",out:0},{ id:"#about",out:0}];
 $("nav a").click(function(e){
 		     e.preventDefault();
-		     var targetContent=$(this).attr("href").slice(0,-2);
-		     if(out===0){
-			 slideIn(targetContent);
-			 out=1;
-			 lastAccessed=targetContent;
-		     }
-		     else if(out==1&&targetContent==lastAccessed){
-			 slideOut(targetContent);
-			 out=0;
-		     }
-		     else if(out==1&&targetContent!=lastAccessed){
-//do nothing
-			 //			 $(".whisper").html($(targetContent).html());
-			 //lastAccessed=targetContent;
-		     }
-		 });
-/*
-ABORTED FOR NOW COZ ANNOYING
- $("nav a").focus(function(e){
-		     e.preventDefault();
-		     if(out===0){
-			 alert($(e.target)+" is focused, & shall slide out because whisper is still hidden.");out=1;console.log(out);
+		     var id=$(this).attr("href").slice(0,-2);
+		     if(whisperHidden(id)==0){
+			 slideIn(id);
+			 toggleInOut(id);
 		     }
 		     else{
-			 alert($(e.target)+" is focused, but since whisper is already out, no sliding happens. IF content is diff from current content, content is extracted and simply pushed into current whisper; else nothing happens.");out=0;console.log(out); 
+			 slideOut(id);
+			 toggleInOut(id);
 		     }
-		 });*/
-function slideIn(targetContent){
-    if(targetContent=="#search-more"||targetContent=="#accounts")
-	$("#rtl").css({display:"block"}).animate({left:(wWidth-$("#rtl").width())-10},'fast','easeInQuint').html($(targetContent).html());
-    else if(targetContent=="#chrome"||targetContent=="#about")
-    	$("#ltr").css({display:"block"}).animate({left:"10px"},'fast','easeInQuint').html($(targetContent).html());
-}
-function slideOut(targetContent){
-    if(targetContent=="#search-more"||targetContent=="#accounts"){
-	$("#rtl").animate({left:wWidth},'fast','easeOutQuint');
-	//$("#rtl").css({display:"none"});
-    }
-    else if(targetContent=="#chrome"||targetContent=="#about"){
-	$("#ltr").animate({left:-wWidth-7},'fast','easeOutQuint');
-//    	$("#ltr").css({display:"none"});
+		 });
+function whisperHidden(id){
+    for(var i=0;i<whispers.length;i++){
+	if(whispers[i].id==id){
+	    return whispers[i].out;
+	}
     }
 }
+function toggleInOut(id){
+    for(var i=0;i<whispers.length;i++){
+	if(whispers[i].id==id){
+	    whispers[i].out=(whispers[i].out==0)?1:0;
+	}
+    }
+}
+function slideIn(id){
+    $(id).css({display:"block"}).animate({left:0},'fast','easeInQuint');
+}
+function slideOut(id){
+    if(id=="#search-more"||id=="#chrome"){
+	slide(wWidth);	
+    }
+    else if(id=="#accounts"||id=="#about"){
+	slide(-wWidth);	
+    }
+    function slide(dimensions){
+	$(id).animate({left:dimensions},{duration:'slow',specialEasing:'easeOutQuint',complete:function(){
+					     $(this).delay(5000).hide();
+					 }});
+    }
+}
+		      

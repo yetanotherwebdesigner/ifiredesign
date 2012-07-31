@@ -14,13 +14,16 @@ html {
 
 body {
   min-height: 100%;
-  font: 13px normal Arial,sans-serif; }
+  font: 13px normal Arial,Helvetica,sans-serif; }
 
 ul {
   margin: 0 auto; }
 
 ul, li {
   list-style-type: none; }
+
+li {
+  margin: 0 20px 10px 20px; }
 
 /* MAIN */
 #main {
@@ -31,7 +34,7 @@ ul, li {
   text-align: center;
   position: relative;
   z-index: 4; }
-  #main #search {
+  #main form {
     padding-top: 351px; }
   #main ul li {
     float: left;
@@ -112,26 +115,40 @@ a[href|="#search"] {
   left: 769px; }
 
 /* SECTIONS > SEARCH MORE */
-.whisper {
+section {
+  text-indent: -9999px;
   display: none;
   position: absolute;
-  top: 140px;
   z-index: 7;
+  width: 1024px;
+  border-bottom: 7px solid #899830; }
+
+#search-more {
+  left: 1024px;
+  top: 60px;
+  height: 208px;
+  background: #ced987; }
+
+#accounts {
+  left: -1024px;
+  top: 268px;
+  height: 208px;
+  background: #c6d374;
+  width: 1024px; }
+
+#chrome {
+  left: 1024px;
+  top: 474px;
+  height: 166px;
+  background: #becd60;
+  width: 1024px; }
+
+#about {
+  left: -1024px;
+  top: 640px;
+  height: 84px;
   background: #b6c74d;
-  width: 703px;
-  /* @include shadow(bottom,darken($lightgreen,10));@include shadow(right,darken($lightgreen,10),1px);@include shadow(left,darken($lightgreen,10),1px); */ }
-
-#ltr {
-  height: 242px;
-  min-height: 242px;
-  background: url("images/ltr.png") no-repeat 0 0;
-  text-indent: -9999px; }
-
-#rtl {
-  height: 483px;
-  min-height: 483px;
-  background: url("images/tooltip.png") no-repeat 0 0;
-  text-indent: -9999px; }
+  width: 1024px; }
 
 /* CANVAS */
 canvas {
