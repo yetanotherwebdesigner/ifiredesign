@@ -21,10 +21,12 @@
       </section>
     </article>
     <nav>
-      <a href="#search-more-o">Search More</a>
-      <a href="#accounts-o">Accounts</a>
-      <a href="#chrome-o">Chrome</a>
-      <a href="#about-o">Google</a>
+      <div>
+	<a href="#search-more-o">Search More</a>
+	<a href="#accounts-o">Accounts</a>
+	<a href="#chrome-o">Chrome</a>
+	<a href="#about-o">Google</a>
+      </div>
     </nav>
     <section id="search-more">
       <ul id="search-more-o">
@@ -74,7 +76,7 @@
     <canvas id="main-balloon"><img src="images/thought-balloon.png" alt="A thought balloon with the 'Google' logo on it"></canvas>
     <canvas id="dots"></canvas>
     <canvas id="icons"></canvas>
-    <div id="rtl" class="whisper"></div>
+    <div id="rtl" class="whisper"></div><span class="tooltip"></span>
     <div id="ltr" class="whisper"></div>    
     <script>yepnope({
       test:Modernizr.canvas,

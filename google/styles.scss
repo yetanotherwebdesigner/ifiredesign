@@ -8,8 +8,11 @@ $icon-dimensions:16px;
 $search-options-padright:10px;
 $aside-padding:40px;
 $text-margin:10px;
+$whisper-width:683px;
 /* MIXINS */
-@mixin shadow($side,$color:darken($darkgreen,50)){ border-#{ $side }:7px solid #{ $color }; }
+@mixin shadow($side,$color:darken($darkgreen,50),$thickness:7px){
+  border-#{ $side }:#{ $thickness } solid #{ $color };
+}
 @mixin centertext{ text-align:center; }
 @mixin embossedtext{ text-shadow:0 -1px $darkgreen; }
 /* GLOBAL STYLES */
@@ -35,16 +38,17 @@ ul{ width:($icon-dimensions+$search-options-padright)*$search-options;height:26p
        }
 /* NAV */
 nav{ width:100%;height:20px;background:$darkgreen;opacity:.3;position:absolute;top:0;left:0;z-index:5;padding:$aside-padding/2 $aside-padding;@include shadow(bottom);&:hover{ opacity:.8; }
+div{ width:1024px;margin:0 auto; }
 a{ position:absolute;top:10px;z-index:6;width:255px;font-weight:bold;line-height:27px;margin:$text-margin 0;@include centertext;color:lighten($lightgreen,50);text-decoration:none;&:focus{ outline:none;margin-top:5px;} }
 }
 a[href|="#about"]{ left:0; }
-a[href|="#chrome"]{ left:256px;}
-a[href|="#accounts"]{ left:511px;}
-a[href|="#search"]{ left:766px;}
+a[href|="#chrome"]{ left:257px;}
+a[href|="#accounts"]{ left:513px;}
+a[href|="#search"]{ left:769px;}
 /* SECTIONS > SEARCH MORE */
-.whisper{ display:none;position:absolute;top:60px;z-index:7;background:$lightgreen;width:100%;height:100%;min-height:684px; }
-#ltr{ @include shadow(right,darken($lightgreen,10)); }
-#rtl{ @include shadow(left,darken($lightgreen,10)); }
+.whisper{ display:none;position:absolute;top:140px;z-index:7;background:$lightgreen;width:$whisper-width + 20;/* @include shadow(bottom,darken($lightgreen,10));@include shadow(right,darken($lightgreen,10),1px);@include shadow(left,darken($lightgreen,10),1px); */}
+#ltr{ height:242px;min-height:242px;background:url("images/ltr.png") no-repeat 0 0;text-indent:-9999px;}
+#rtl{ height:483px;min-height:483px;background:url("images/tooltip.png") no-repeat 0 0;text-indent:-9999px;}
 /* CANVAS */
 canvas{ position:absolute;top:0;left:0; }
 #icons{ z-index:2; }
