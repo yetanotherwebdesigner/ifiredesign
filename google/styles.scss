@@ -10,6 +10,10 @@ $padding:40px;
 $text-margin:10px;
 $whisper-width:683px;
 $tens:10px;
+$gblue:#0042f0;
+$gred:#de0c32;
+$gyellow:#FBCD39;
+$ggreen:#008e1c;
 /* MIXINS */
 @mixin shadow($side,$color:darken($darkgreen,50),$thickness:7px){
   border-#{ $side }:#{ $thickness } solid #{ $color };
@@ -48,9 +52,33 @@ a[href|="#chrome"]{ left:257px;}
 a[href|="#accounts"]{ left:513px;}
 a[href|="#search"]{ left:769px;}
 /* SECTIONS > SEARCH MORE */
-section{ text-indent:-9999px;display:none;position:absolute;z-index:7;width:1024px;@include shadow(bottom,darken($lightgreen,15));}
-#search-more{ left:1024px;top:60px;height:208px;background:lighten($lightgreen,15); }
-#accounts{ left:-1024px;top:268px;height:208px;background:lighten($lightgreen,10);width:1024px;}
+section{ text-indent:-9999px;display:none;position:absolute;z-index:7;width:1024px;@include shadow(bottom,darken($lightgreen,15));
+li{ float:left;margin:0;  }
+/* SEARCH MORE */
+a{ display:block;&:link,&:visited{ color:$darkgreen;text-decoration:none;} &:hover,&:active{ text-decoration:underline; }
+&[href="https://www.google.com/imghp?hl=en"]{ background:$gblue url("images/sm-images-text.png") no-repeat 50% 50%; }
+&[href="http://maps.google.com/maps?hl=en"]{ background:$gred url("images/sm-maps-text.png") no-repeat 50% 50%; }
+&[href="https://play.google.com/?hl=en"]{ background:$gyellow url("images/sm-play-text.png") no-repeat 50% 50%; }
+&[href="http://www.youtube.com"]{ background:$gblue url("images/sm-youtube-text.png") no-repeat 50% 50%; }
+&[href="http://news.google.com/nwshp?hl=en"]{ background:$ggreen url("images/sm-news-text.png") no-repeat 50% 50%; }
+&[href="http://books.google.com/bkshp?hl=en"]{ background:$gred url("images/sm-books-text.png") no-repeat 50% 50%; }
+&[href="http://www.google.com/finance"]{ background:$gblue url("images/sm-finance-text.png") no-repeat 50% 50%; }
+&[href="http://video.google.com/?hl=en"]{ background:$ggreen url("images/sm-videos-text.png") no-repeat 50% 50%; }
+&[href="http://www.google.com/intl/en/options/"]{ background:$gred url("images/sm-more-text.png") no-repeat 50% 50%; }
+/* ACCOUNTS */
+&[href="https://accounts.google.com/ServiceLogin?hl=en&continue=https://www.google.com/"]{ background:#000 url("images/acc-search-text.png") no-repeat 50% 50%; }
+&[href="https://plus.google.com/?gpsrc=ogpy0"]{ background:#fff url("images/acc-plus-text.png") no-repeat 50% 50%; }
+&[href="https://mail.google.com/mail/"]{ background:#000 url("images/acc-mail-text.png") no-repeat 50% 50%; }
+&[href="https://docs.google.com/"]{ background:#fff url("images/acc-docs-text.png") no-repeat 50% 50%; }
+&[href="https://www.google.com/calendar"]{ background:#000 url("images/acc-calendar-text.png") no-repeat 50% 50%; }
+&[href="https://wallet.google.com/manage"]{ background:#fff url("images/acc-wallet-text.png") no-repeat 50% 50%; }
+&[href="http://www.blogger.com"]{ background:#000 url("images/acc-blogger-text.png") no-repeat 50% 50%; }
+&[href="http://www.google.com/reader/?hl=en"]{ background:#fff url("images/acc-reader-text.png") no-repeat 50% 50%; }
+&[href="http://picasaweb.google.com/home?hl=en"]{ background:#000 url("images/acc-photos-text.png") no-repeat 50% 50%; }
+}
+}
+#search-more{ text-indent:-9999px;left:1024px;top:60px;height:208px;background:$gblue; }
+#accounts{ left:-1024px;top:268px;height:208px;background:#fff;width:1024px;}
 #chrome{ left:1024px;top:474px;height:166px;background:lighten($lightgreen,5);width:1024px;}
 #about{ left:-1024px;top:640px;height:84px;background:lighten($lightgreen,0);width:1024px;}
 /* CANVAS */

@@ -1,7 +1,8 @@
-var wWidth=$(window).width(),wHeight=$(window).height(),
-out=0,lastAccessed;
+var wWidth=$(window).width(),wHeight=$(window).height();
 $("#search-more").css({left:wWidth,height:((wHeight-60)*5/16)|0});
+$("#search-more li a").css({height:((wHeight-60)*5/16)|0,width:(wWidth/9)|0});
 $("#accounts").css({left:-wWidth,top:60+((wHeight-60)*5/16)|0,height:((wHeight-60)*5/16)});
+$("#accounts li a").css({height:((wHeight-60)*5/16)|0,width:(wWidth/9)|0});
 $("#chrome").css({left:wWidth,top:60+((wHeight-60)*5/8)|0,height:((wHeight-60)/4)});
 $("#about").css({left:-wWidth,top:60+((wHeight-60)*7/8)|0,height:((wHeight-60)/8)});
 var whispers=[{ id:"#search-more",out:0},{ id:"#accounts",out:0},{ id:"#chrome",out:0},{ id:"#about",out:0}];
@@ -16,7 +17,7 @@ $("nav a").click(function(e){
 			 slideOut(id);
 			 toggleInOut(id);
 		     }
-		 });
+		 });      
 function whisperHidden(id){
     for(var i=0;i<whispers.length;i++){
 	if(whispers[i].id==id){
@@ -47,4 +48,3 @@ function slideOut(id){
 					 }});
     }
 }
-		      
