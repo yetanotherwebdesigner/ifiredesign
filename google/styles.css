@@ -84,9 +84,6 @@ nav {
   border-bottom: 7px solid black; }
   nav:hover {
     opacity: .8; }
-  nav div {
-    width: 1024px;
-    margin: 0 auto; }
   nav a {
     position: absolute;
     top: 10px;
@@ -121,16 +118,16 @@ section {
   position: absolute;
   z-index: 7;
   width: 1024px;
-  border-bottom: 7px solid #899830;
+  border-bottom: 7px solid #78842a;
   /* SEARCH MORE */ }
   section li {
     float: left;
     margin: 0; }
   section a {
     display: block;
+    color: #fff;
     /* ACCOUNTS */ }
     section a:link, section a:visited {
-      color: #161e07;
       text-decoration: none; }
     section a:hover, section a:active {
       text-decoration: underline; }
@@ -149,55 +146,67 @@ section {
     section a[href="http://www.google.com/finance"] {
       background: #0042f0 url("images/sm-finance-text.png") no-repeat 50% 50%; }
     section a[href="http://video.google.com/?hl=en"] {
-      background: #008e1c url("images/sm-videos-text.png") no-repeat 50% 50%; }
+      background: #de0c32 url("images/sm-videos-text.png") no-repeat 50% 50%; }
     section a[href="http://www.google.com/intl/en/options/"] {
-      background: #de0c32 url("images/sm-more-text.png") no-repeat 50% 50%; }
+      background: #fbcd39 url("images/sm-more-text.png") no-repeat 50% 50%; }
     section a[href="https://accounts.google.com/ServiceLogin?hl=en&continue=https://www.google.com/"] {
-      background: black url("images/acc-search-text.png") no-repeat 50% 50%; }
+      background: url("images/acc-signin-text.png") no-repeat 50% 50%; }
     section a[href="https://plus.google.com/?gpsrc=ogpy0"] {
-      background: white url("images/acc-plus-text.png") no-repeat 50% 50%; }
+      background: #161e07 url("images/acc-plus-text.png") no-repeat 50% 50%; }
     section a[href="https://mail.google.com/mail/"] {
-      background: black url("images/acc-mail-text.png") no-repeat 50% 50%; }
+      background: url("images/acc-gmail-text.png") no-repeat 50% 50%; }
     section a[href="https://docs.google.com/"] {
-      background: white url("images/acc-docs-text.png") no-repeat 50% 50%; }
+      background: #161e07 url("images/acc-docs-text.png") no-repeat 50% 50%; }
     section a[href="https://www.google.com/calendar"] {
-      background: black url("images/acc-calendar-text.png") no-repeat 50% 50%; }
+      background: url("images/acc-calendar-text.png") no-repeat 50% 50%; }
     section a[href="https://wallet.google.com/manage"] {
-      background: white url("images/acc-wallet-text.png") no-repeat 50% 50%; }
+      background: #161e07 url("images/acc-wallet-text.png") no-repeat 50% 50%; }
     section a[href="http://www.blogger.com"] {
-      background: black url("images/acc-blogger-text.png") no-repeat 50% 50%; }
+      background: url("images/acc-blogger-text.png") no-repeat 50% 50%; }
     section a[href="http://www.google.com/reader/?hl=en"] {
-      background: white url("images/acc-reader-text.png") no-repeat 50% 50%; }
+      background: #161e07 url("images/acc-reader-text.png") no-repeat 50% 50%; }
     section a[href="http://picasaweb.google.com/home?hl=en"] {
-      background: black url("images/acc-photos-text.png") no-repeat 50% 50%; }
+      background: url("images/acc-photos-text.png") no-repeat 50% 50%; }
 
 #search-more {
-  text-indent: -9999px;
   left: 1024px;
   top: 60px;
   height: 208px;
-  background: #0042f0; }
+  background: #fbcd39; }
 
 #accounts {
   left: -1024px;
   top: 268px;
   height: 208px;
-  background: #fff;
+  background: #b6c74d;
   width: 1024px; }
 
 #chrome {
   left: 1024px;
   top: 474px;
   height: 166px;
-  background: #becd60;
+  background: #899830 url("images/chrome-pane-image.png") no-repeat -50% -50%;
   width: 1024px; }
 
 #about {
+  text-indent: 0;
   left: -1024px;
   top: 640px;
   height: 84px;
-  background: #b6c74d;
-  width: 1024px; }
+  background: #161e07;
+  width: 1024px;
+  border-bottom: 7px solid #070902; }
+  #about ul {
+    position: absolute;
+    top: 50%; }
+  #about li {
+    float: left;
+    padding: 0;
+    text-align: center; }
+  #about a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold; }
 
 /* CANVAS */
 canvas {
