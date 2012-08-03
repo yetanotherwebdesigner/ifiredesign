@@ -51,34 +51,34 @@ a[href|="#chrome"]{ left:257px;}
 a[href|="#accounts"]{ left:513px;}
 a[href|="#search"]{ left:769px;}
 /* SECTIONS > SEARCH MORE */
-section{ text-indent:-9999px;display:none;position:absolute;z-index:7;width:1024px;@include shadow(bottom,darken($lightgreen,20));
+section{ background:#fff;text-indent:-9999px;display:none;position:absolute;z-index:7;width:1024px;@include shadow(bottom,darken($lightgrey,50));
 li{ float:left;margin:0;  }
 /* SEARCH MORE */
 a{ display:block;color:#fff;&:link,&:visited{ text-decoration:none;} &:hover,&:active{ text-decoration:underline; }
-&[href="https://www.google.com/imghp?hl=en"]{ background:$gblue url("images/sm-images-text.png") no-repeat 50% 50%; }
-&[href="http://maps.google.com/maps?hl=en"]{ background:$gred url("images/sm-maps-text.png") no-repeat 50% 50%; }
-&[href="https://play.google.com/?hl=en"]{ background:$gyellow url("images/sm-play-text.png") no-repeat 50% 50%; }
-&[href="http://www.youtube.com"]{ background:$gblue url("images/sm-youtube-text.png") no-repeat 50% 50%; }
-&[href="http://news.google.com/nwshp?hl=en"]{ background:$ggreen url("images/sm-news-text.png") no-repeat 50% 50%; }
-&[href="http://books.google.com/bkshp?hl=en"]{ background:$gred url("images/sm-books-text.png") no-repeat 50% 50%; }
-&[href="http://www.google.com/finance"]{ background:$gblue url("images/sm-finance-text.png") no-repeat 50% 50%; }
-&[href="http://video.google.com/?hl=en"]{ background:$gred url("images/sm-videos-text.png") no-repeat 50% 50%; }
-&[href="http://www.google.com/intl/en/options/"]{ background:$gyellow url("images/sm-more-text.png") no-repeat 50% 50%; } 
+&[href="https://www.google.com/imghp?hl=en"]{ background:#fff url("images/sm-images-text.png") no-repeat 50% 50%; }
+&[href="http://maps.google.com/maps?hl=en"]{ background:darken(#fff,2) url("images/sm-maps-text.png") no-repeat 50% 50%; }
+&[href="https://play.google.com/?hl=en"]{ background:darken(#fff,4) url("images/sm-play-text.png") no-repeat 50% 50%; }
+&[href="http://www.youtube.com"]{ background:darken(#fff,6) url("images/sm-youtube-text.png") no-repeat 50% 50%; }
+&[href="http://news.google.com/nwshp?hl=en"]{ background:darken(#fff,8) url("images/sm-news-text.png") no-repeat 50% 50%; }
+&[href="http://books.google.com/bkshp?hl=en"]{ background:darken(#fff,10) url("images/sm-books-text.png") no-repeat 50% 50%; }
+&[href="http://www.google.com/finance"]{ background:darken(#fff,12) url("images/sm-finance-text.png") no-repeat 50% 50%; }
+&[href="http://video.google.com/?hl=en"]{ background:darken(#fff,16) url("images/sm-videos-text.png") no-repeat 50% 50%; }
+&[href="http://www.google.com/intl/en/options/"]{ background:darken(#fff,18) url("images/sm-more-text.png") no-repeat 50% 50%; } 
 /* ACCOUNTS */
-&[href="https://accounts.google.com/ServiceLogin?hl=en&continue=https://www.google.com/"]{ background:url("images/acc-signin-text.png") no-repeat 50% 50%; }
-&[href="https://plus.google.com/?gpsrc=ogpy0"]{ background:$darkgreen url("images/acc-plus-text.png") no-repeat 50% 50%; }
-&[href="https://mail.google.com/mail/"]{ background:url("images/acc-gmail-text.png") no-repeat 50% 50%; }
-&[href="https://docs.google.com/"]{ background:$darkgreen url("images/acc-docs-text.png") no-repeat 50% 50%; }
-&[href="https://www.google.com/calendar"]{ background:url("images/acc-calendar-text.png") no-repeat 50% 50%; }
-&[href="https://wallet.google.com/manage"]{ background:$darkgreen url("images/acc-wallet-text.png") no-repeat 50% 50%; }
-&[href="http://www.blogger.com"]{ background:url("images/acc-blogger-text.png") no-repeat 50% 50%; }
-&[href="http://www.google.com/reader/?hl=en"]{ background:$darkgreen url("images/acc-reader-text.png") no-repeat 50% 50%; }
-&[href="http://picasaweb.google.com/home?hl=en"]{ background:url("images/acc-photos-text.png") no-repeat 50% 50%; }
+&[href="https://accounts.google.com/ServiceLogin?hl=en&continue=https://www.google.com/"]{ background:darken(#fff,35) url("images/acc-signin-text.png") no-repeat 50% 50%; }
+&[href="https://plus.google.com/?gpsrc=ogpy0"]{ background:darken(#fff,31) url("images/acc-plus-text.png") no-repeat 50% 50%; }
+&[href="https://mail.google.com/mail/"]{ background:darken(#fff,27) url("images/acc-gmail-text.png") no-repeat 50% 50%; }
+&[href="https://docs.google.com/"]{ background:darken(#fff,22) url("images/acc-docs-text.png") no-repeat 50% 50%; }
+&[href="https://www.google.com/calendar"]{ background:darken(#fff,18) url("images/acc-calendar-text.png") no-repeat 50% 50%; }
+&[href="https://wallet.google.com/manage"]{ background:darken(#fff,14) url("images/acc-wallet-text.png") no-repeat 50% 50%; }
+&[href="http://www.blogger.com"]{ background:darken(#fff,10) url("images/acc-blogger-text.png") no-repeat 50% 50%; }
+&[href="http://www.google.com/reader/?hl=en"]{ background:darken(#fff,6) url("images/acc-reader-text.png") no-repeat 50% 50%; }
+&[href="http://picasaweb.google.com/home?hl=en"]{ background:darken(#fff,2) url("images/acc-photos-text.png") no-repeat 50% 50%; }
 }
 }
-#search-more{ left:1024px;top:60px;height:208px;background:$gyellow; }
-#accounts{ left:-1024px;top:268px;height:208px;background:$lightgreen;width:1024px;}
-#chrome{ left:1024px;top:474px;height:166px;background:darken($lightgreen,15) url("images/chrome-pane-image.png") no-repeat -50% -50%;width:1024px;}
+#search-more{ left:1024px;top:60px;height:208px;background:darken(#fff,18);@include shadow(bottom,darken($lightgrey,16));}
+#accounts{ left:-1024px;top:268px;height:208px;width:1024px;background:#fff;}
+#chrome{ left:1024px;top:474px;height:166px;background:#fff url("images/chrome-pane-image.png") no-repeat -50% -50%;width:1024px;}
 #about{ text-indent:0;left:-1024px;top:640px;height:84px;background:$darkgreen;width:1024px;@include shadow(bottom,darken($darkgreen,5));
         ul{ position:absolute;top:50%; }
 li{ float:left;padding:0;text-align:center;}

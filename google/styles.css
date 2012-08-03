@@ -113,12 +113,13 @@ a[href|="#search"] {
 
 /* SECTIONS > SEARCH MORE */
 section {
+  background: #fff;
   text-indent: -9999px;
   display: none;
   position: absolute;
   z-index: 7;
   width: 1024px;
-  border-bottom: 7px solid #78842a;
+  border-bottom: 7px solid #676767;
   /* SEARCH MORE */ }
   section li {
     float: left;
@@ -132,60 +133,61 @@ section {
     section a:hover, section a:active {
       text-decoration: underline; }
     section a[href="https://www.google.com/imghp?hl=en"] {
-      background: #0042f0 url("images/sm-images-text.png") no-repeat 50% 50%; }
+      background: white url("images/sm-images-text.png") no-repeat 50% 50%; }
     section a[href="http://maps.google.com/maps?hl=en"] {
-      background: #de0c32 url("images/sm-maps-text.png") no-repeat 50% 50%; }
+      background: #fafafa url("images/sm-maps-text.png") no-repeat 50% 50%; }
     section a[href="https://play.google.com/?hl=en"] {
-      background: #fbcd39 url("images/sm-play-text.png") no-repeat 50% 50%; }
+      background: #f5f5f5 url("images/sm-play-text.png") no-repeat 50% 50%; }
     section a[href="http://www.youtube.com"] {
-      background: #0042f0 url("images/sm-youtube-text.png") no-repeat 50% 50%; }
+      background: #f0f0f0 url("images/sm-youtube-text.png") no-repeat 50% 50%; }
     section a[href="http://news.google.com/nwshp?hl=en"] {
-      background: #008e1c url("images/sm-news-text.png") no-repeat 50% 50%; }
+      background: #ebebeb url("images/sm-news-text.png") no-repeat 50% 50%; }
     section a[href="http://books.google.com/bkshp?hl=en"] {
-      background: #de0c32 url("images/sm-books-text.png") no-repeat 50% 50%; }
+      background: #e6e6e6 url("images/sm-books-text.png") no-repeat 50% 50%; }
     section a[href="http://www.google.com/finance"] {
-      background: #0042f0 url("images/sm-finance-text.png") no-repeat 50% 50%; }
+      background: #e0e0e0 url("images/sm-finance-text.png") no-repeat 50% 50%; }
     section a[href="http://video.google.com/?hl=en"] {
-      background: #de0c32 url("images/sm-videos-text.png") no-repeat 50% 50%; }
+      background: #d6d6d6 url("images/sm-videos-text.png") no-repeat 50% 50%; }
     section a[href="http://www.google.com/intl/en/options/"] {
-      background: #fbcd39 url("images/sm-more-text.png") no-repeat 50% 50%; }
+      background: #d1d1d1 url("images/sm-more-text.png") no-repeat 50% 50%; }
     section a[href="https://accounts.google.com/ServiceLogin?hl=en&continue=https://www.google.com/"] {
-      background: url("images/acc-signin-text.png") no-repeat 50% 50%; }
+      background: #a6a6a6 url("images/acc-signin-text.png") no-repeat 50% 50%; }
     section a[href="https://plus.google.com/?gpsrc=ogpy0"] {
-      background: #161e07 url("images/acc-plus-text.png") no-repeat 50% 50%; }
+      background: #b0b0b0 url("images/acc-plus-text.png") no-repeat 50% 50%; }
     section a[href="https://mail.google.com/mail/"] {
-      background: url("images/acc-gmail-text.png") no-repeat 50% 50%; }
+      background: #bababa url("images/acc-gmail-text.png") no-repeat 50% 50%; }
     section a[href="https://docs.google.com/"] {
-      background: #161e07 url("images/acc-docs-text.png") no-repeat 50% 50%; }
+      background: #c7c7c7 url("images/acc-docs-text.png") no-repeat 50% 50%; }
     section a[href="https://www.google.com/calendar"] {
-      background: url("images/acc-calendar-text.png") no-repeat 50% 50%; }
+      background: #d1d1d1 url("images/acc-calendar-text.png") no-repeat 50% 50%; }
     section a[href="https://wallet.google.com/manage"] {
-      background: #161e07 url("images/acc-wallet-text.png") no-repeat 50% 50%; }
+      background: #dbdbdb url("images/acc-wallet-text.png") no-repeat 50% 50%; }
     section a[href="http://www.blogger.com"] {
-      background: url("images/acc-blogger-text.png") no-repeat 50% 50%; }
+      background: #e6e6e6 url("images/acc-blogger-text.png") no-repeat 50% 50%; }
     section a[href="http://www.google.com/reader/?hl=en"] {
-      background: #161e07 url("images/acc-reader-text.png") no-repeat 50% 50%; }
+      background: #f0f0f0 url("images/acc-reader-text.png") no-repeat 50% 50%; }
     section a[href="http://picasaweb.google.com/home?hl=en"] {
-      background: url("images/acc-photos-text.png") no-repeat 50% 50%; }
+      background: #fafafa url("images/acc-photos-text.png") no-repeat 50% 50%; }
 
 #search-more {
   left: 1024px;
   top: 60px;
   height: 208px;
-  background: #fbcd39; }
+  background: #d1d1d1;
+  border-bottom: 7px solid #bdbdbd; }
 
 #accounts {
   left: -1024px;
   top: 268px;
   height: 208px;
-  background: #b6c74d;
-  width: 1024px; }
+  width: 1024px;
+  background: #fff; }
 
 #chrome {
   left: 1024px;
   top: 474px;
   height: 166px;
-  background: #899830 url("images/chrome-pane-image.png") no-repeat -50% -50%;
+  background: white url("images/chrome-pane-image.png") no-repeat -50% -50%;
   width: 1024px; }
 
 #about {
