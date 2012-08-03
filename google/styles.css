@@ -126,7 +126,6 @@ section {
     margin: 0; }
   section a {
     display: block;
-    color: #fff;
     /* ACCOUNTS */ }
     section a:link, section a:visited {
       text-decoration: none; }
@@ -184,11 +183,27 @@ section {
   background: #fff; }
 
 #chrome {
+  text-indent: 0;
   left: 1024px;
   top: 474px;
   height: 166px;
-  background: white url("images/chrome-pane-image.png") no-repeat -50% -50%;
-  width: 1024px; }
+  background: white url("images/chrome-pane-image.png") no-repeat 40px 50%;
+  width: 1024px;
+  font-weight: bold; }
+  #chrome div {
+    position: absolute;
+    top: 50%;
+    left: 257px; }
+  #chrome span, #chrome a {
+    float: left;
+    text-transform: capitalize;
+    font-size: 16px;
+    padding-right: 10px; }
+  #chrome span:after, #chrome a:after {
+    content: "."; }
+  #chrome a {
+    color: #1a1a1a;
+    /* &:after{ content:"\00bb"; } */ }
 
 #about {
   text-indent: 0;
@@ -206,7 +221,7 @@ section {
     padding: 0;
     text-align: center; }
   #about a {
-    color: white;
+    color: #fff;
     text-decoration: none;
     font-weight: bold; }
 

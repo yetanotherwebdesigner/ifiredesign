@@ -1,11 +1,12 @@
 var wWidth=$(window).width(),wHeight=$(window).height();
 $("nav a").css({width:(wWidth/4)|0});
-$("#search-more").css({left:wWidth,height:((wHeight-60)*5/16)|0});
+$("#search-more").css({left:wWidth,height:((wHeight-60)*5/16)|0,width:wWidth});
 $("#search-more li a").css({height:((wHeight-60)*5/16)|0,width:(wWidth/9)|0});
-$("#accounts").css({left:-wWidth,top:60+((wHeight-60)*5/16)|0,height:((wHeight-60)*5/16)});
+$("#accounts").css({left:-wWidth,top:60+((wHeight-60)*5/16)|0,height:((wHeight-60)*5/16),width:wWidth});
 $("#accounts li a").css({height:((wHeight-60)*5/16)|0,width:(wWidth/9)|0});
-$("#chrome").css({left:wWidth,top:60+((wHeight-60)*5/8)|0,height:((wHeight-60)/4)});
-$("#about").css({left:-wWidth,top:60+((wHeight-60)*7/8)|0,height:((wHeight-60)/8)});
+$("#chrome").css({left:wWidth,top:60+((wHeight-60)*5/8)|0,height:((wHeight-60)/4),width:wWidth});
+$("#chrome div").css({"margin-top":-($("#chrome div").height())/2});
+$("#about").css({left:-wWidth,top:60+((wHeight-60)*7/8)|0,height:((wHeight-60)/8),width:wWidth});
 $("#about li").css({width:(wWidth/5)|0});
 var whispers=[{ id:"#search-more",out:0},{ id:"#accounts",out:0},{ id:"#chrome",out:0},{ id:"#about",out:0}];
 $("nav a").click(function(e){

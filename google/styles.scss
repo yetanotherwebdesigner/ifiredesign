@@ -14,6 +14,7 @@ $gblue:#0042f0;
 $gred:#de0c32;
 $gyellow:#FBCD39;
 $ggreen:#008e1c;
+$chrome-width:177px;
 /* MIXINS */
 @mixin shadow($side,$color:darken($darkgreen,50),$thickness:7px){
   border-#{ $side }:#{ $thickness } solid #{ $color };
@@ -54,7 +55,7 @@ a[href|="#search"]{ left:769px;}
 section{ background:#fff;text-indent:-9999px;display:none;position:absolute;z-index:7;width:1024px;@include shadow(bottom,darken($lightgrey,50));
 li{ float:left;margin:0;  }
 /* SEARCH MORE */
-a{ display:block;color:#fff;&:link,&:visited{ text-decoration:none;} &:hover,&:active{ text-decoration:underline; }
+a{ display:block;&:link,&:visited{ text-decoration:none;} &:hover,&:active{ text-decoration:underline; }
 &[href="https://www.google.com/imghp?hl=en"]{ background:#fff url("images/sm-images-text.png") no-repeat 50% 50%; }
 &[href="http://maps.google.com/maps?hl=en"]{ background:darken(#fff,2) url("images/sm-maps-text.png") no-repeat 50% 50%; }
 &[href="https://play.google.com/?hl=en"]{ background:darken(#fff,4) url("images/sm-play-text.png") no-repeat 50% 50%; }
@@ -78,11 +79,16 @@ a{ display:block;color:#fff;&:link,&:visited{ text-decoration:none;} &:hover,&:a
 }
 #search-more{ left:1024px;top:60px;height:208px;background:darken(#fff,18);@include shadow(bottom,darken($lightgrey,16));}
 #accounts{ left:-1024px;top:268px;height:208px;width:1024px;background:#fff;}
-#chrome{ left:1024px;top:474px;height:166px;background:#fff url("images/chrome-pane-image.png") no-repeat -50% -50%;width:1024px;}
+#chrome{ text-indent:0;left:1024px;top:474px;height:166px;background:#fff url("images/chrome-pane-image.png") no-repeat $padding 50%;width:1024px;font-weight:bold;
+         div{ position:absolute;top:50%;left:$chrome-width + (2*$padding); }
+         span,a{ float:left;text-transform:capitalize;font-size:16px;padding-right:$tens; }
+span,a{ &:after{ content:"."; } }
+a{ color:#1a1a1a;/* &:after{ content:"\00bb"; } */ }
+}
 #about{ text-indent:0;left:-1024px;top:640px;height:84px;background:$darkgreen;width:1024px;@include shadow(bottom,darken($darkgreen,5));
         ul{ position:absolute;top:50%; }
 li{ float:left;padding:0;text-align:center;}
-a{ color:white;text-decoration:none;font:{ weight:bold; } }
+a{ color:#fff;text-decoration:none;font:{ weight:bold; } }
         }
 /* CANVAS */
 canvas{ position:absolute;top:0;left:0; }
