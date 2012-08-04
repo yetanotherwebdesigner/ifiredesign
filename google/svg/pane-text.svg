@@ -28,10 +28,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.1854717"
-     inkscape:cx="57.21485"
-     inkscape:cy="104.58569"
+     inkscape:cx="-13.479271"
+     inkscape:cy="122.88837"
      inkscape:document-units="px"
-     inkscape:current-layer="g3069"
+     inkscape:current-layer="g3057"
      showgrid="false"
      inkscape:window-width="1024"
      inkscape:window-height="742"
@@ -201,7 +201,7 @@
        id="text4541"
        y="72.137695"
        x="-1002.7069"
-       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#cccccc;fill-opacity:1;stroke:none;font-family:Gill Sans MT;-inkscape-font-specification:Gill Sans MT"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#f2f2f2;fill-opacity:1;stroke:none;font-family:Gill Sans MT;-inkscape-font-specification:Gill Sans MT"
        xml:space="preserve"
        inkscape:export-filename="C:\Documents and Settings\Guokang\Desktop\bro\ifiredesign\google\images\sm-finance-text.png"
        inkscape:export-xdpi="90"
@@ -220,7 +220,7 @@
      sodipodi:insensitive="true">
     <text
        xml:space="preserve"
-       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#e6e6e6;fill-opacity:1;stroke:none;font-family:Gill Sans MT;-inkscape-font-specification:Gill Sans MT"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#f9f9f9;fill-opacity:1;stroke:none;font-family:Gill Sans MT;-inkscape-font-specification:Gill Sans MT"
        x="-996.11511"
        y="72.137695"
        id="text4549"
@@ -294,7 +294,7 @@
        id="text3041"
        y="74.364288"
        x="-176.61615"
-       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#e6e6e6;fill-opacity:1;stroke:none;display:inline;font-family:Gill Sans MT;-inkscape-font-specification:Gill Sans MT"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#f9f9f9;fill-opacity:1;stroke:none;display:inline;font-family:Gill Sans MT;-inkscape-font-specification:Gill Sans MT"
        xml:space="preserve"><tspan
          y="74.364288"
          x="-176.61615"
@@ -309,7 +309,7 @@
      sodipodi:insensitive="true">
     <text
        xml:space="preserve"
-       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#cccccc;fill-opacity:1;stroke:none;display:inline;font-family:Gill Sans MT;-inkscape-font-specification:Gill Sans MT"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#f2f2f2;fill-opacity:1;stroke:none;display:inline;font-family:Gill Sans MT;-inkscape-font-specification:Gill Sans MT"
        x="-176.61615"
        y="74.364288"
        id="text3047"
@@ -338,7 +338,7 @@
        id="text3053"
        y="74.364288"
        x="-176.61615"
-       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#b3b3b3;fill-opacity:1;stroke:none;display:inline;font-family:Gill Sans MT;-inkscape-font-specification:Gill Sans MT"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#e6e6e6;fill-opacity:1;stroke:none;display:inline;font-family:Gill Sans MT;-inkscape-font-specification:Gill Sans MT"
        xml:space="preserve"><tspan
          y="74.364288"
          x="-176.61615"
@@ -349,8 +349,7 @@
      inkscape:groupmode="layer"
      id="g3057"
      inkscape:label="Calendar"
-     style="display:none"
-     sodipodi:insensitive="true">
+     style="display:inline">
     <text
        xml:space="preserve"
        style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#999999;fill-opacity:1;stroke:none;display:inline;font-family:Gill Sans MT;-inkscape-font-specification:Gill Sans MT"
@@ -371,8 +370,7 @@
      inkscape:label="Wallet"
      id="g3063"
      inkscape:groupmode="layer"
-     style="display:none"
-     sodipodi:insensitive="true">
+     style="display:none">
     <text
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
@@ -393,7 +391,8 @@
      inkscape:groupmode="layer"
      id="g3069"
      inkscape:label="Blogger"
-     style="display:inline">
+     style="display:none"
+     sodipodi:insensitive="true">
     <text
        xml:space="preserve"
        style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#666666;fill-opacity:1;stroke:none;display:inline;font-family:Gill Sans MT;-inkscape-font-specification:Gill Sans MT"

@@ -44,7 +44,7 @@ border:{ radius:20px;bottom:{ style:none; }left:{ style:solid;width:5px;color:da
 ul{ width:($icon-dimensions+$search-options-padright)*$search-options;height:26px;overflow:hidden;margin:20px auto; }
        }
 /* NAV */
-nav{ width:100%;height:20px;background:$darkgreen;opacity:.3;position:absolute;top:0;left:0;z-index:5;padding:$padding/2 $padding;@include shadow(bottom);&:hover{ opacity:.8; }
+nav{ width:100%;height:20px;background:$darkgreen;opacity:.3;filter:alpha(opacity=30);position:absolute;top:0;left:0;z-index:5;padding:$padding/2 $padding;@include shadow(bottom);&:hover{ opacity:.8; }
 a{ position:absolute;top:10px;z-index:6;width:255px;font-weight:bold;line-height:27px;margin:$text-margin 0;@include centertext;color:lighten($lightgreen,50);text-decoration:none;&:focus{ outline:none;margin-top:5px;} }
 }
 a[href|="#about"]{ left:0; }

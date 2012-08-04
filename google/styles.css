@@ -76,6 +76,7 @@ nav {
   height: 20px;
   background: #161e07;
   opacity: .3;
+  filter: alpha(opacity=30);
   position: absolute;
   top: 0;
   left: 0;
