@@ -22,7 +22,7 @@ $chrome-width:177px;
 @mixin centertext{ text-align:center; }
 @mixin embossedtext{ text-shadow:0 -1px $darkgreen; }
 /* GLOBAL STYLES */
-*{ margin:0;padding:0;transition-duration:.5s;-moz-transition-duration:.5s;-o-transition-duration:.5s;}
+*{ margin:0;padding:0;transition-duration:.5s;-moz-transition-duration:.5s;-o-transition-duration:.5s;-webkit-transition-duration:.5s;}
 html{ background:$darkgreen-2 url("images/gradient-bg.png") repeat-x 0 50%;overflow:hidden; }
 body{ min-height:100%;font:13px normal Arial,Helvetica,sans-serif; }
 ul{ margin:0 auto; }
@@ -39,12 +39,12 @@ li{ margin:0 2*$tens $tens 2*$tens; }
                         }
               }
 form{ width:561px;margin:0 auto; }
-input{ display:none;text-align:center;font:{ size:16px;}width:373px;height:29px;margin:0 auto;color:$darkgreen;font:{ weight:bold;size:16px;} background-color:$lightgrey;
+input{ display:none;/* to be invoked _after_ balloon pops out */text-align:center;font:{ size:16px;}width:373px;padding:5px 0;margin:0 auto;color:$darkgreen;font:{ weight:bold;size:16px;} background-color:$lightgrey;
 border:{ radius:20px;bottom:{ style:none; }left:{ style:solid;width:5px;color:darken($lightgrey,10); }right:{ style:none; }top:{ style:solid;width:3px;color:darken($lightgrey,10); } }}
 ul{ width:($icon-dimensions+$search-options-padright)*$search-options;height:26px;overflow:hidden;margin:20px auto; }
        }
 /* NAV */
-nav{ width:100%;height:20px;background:$darkgreen;opacity:.3;filter:alpha(opacity=30);position:absolute;top:0;left:0;z-index:5;padding:$padding/2 $padding;@include shadow(bottom);&:hover{ opacity:.8; }
+nav{ width:100%;height:20px;background:$darkgreen;opacity:.3;filter:alpha(opacity=30);position:absolute;top:0;left:0;z-index:5;padding:$padding/2 $padding;@include shadow(bottom);&:hover{ opacity:.8;filter:alpha(opacity=80); }
 a{ position:absolute;top:10px;z-index:6;width:255px;font-weight:bold;line-height:27px;margin:$text-margin 0;@include centertext;color:lighten($lightgreen,50);text-decoration:none;&:focus{ outline:none;margin-top:5px;} }
 }
 a[href|="#about"]{ left:0; }
@@ -100,3 +100,7 @@ canvas{ position:absolute;top:0;left:0; }
 .no-canvas #dots{ background:url("images/dots-bg.png") repeat 0 0;opacity:.1;filter:alpha(opacity=10);}
 .no-canvas #gradient{ background:url("images/gradient-bg.png") repeat-x 0 50%;  }
 .no-canvas #icons{ display:none; }
+/* IE FIXES */
+.lt-ie9 #main input{ display:inline; }
+.lt-ie8 { background:darken($darkgreen-2,10) url("images/thought-balloon.png") no-repeat 40% 80px; }
+.lt-ie8 #main-balloon,.lt-ie8 #dots{ display:none; }
