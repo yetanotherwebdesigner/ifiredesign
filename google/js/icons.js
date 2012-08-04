@@ -34,7 +34,7 @@ function drawIcons(){
 	    bmp.regY=img.height>>1;	
 	    bmp.x=Math.random()*cWidth;
 	    bmp.y=Math.random()*cHeight;
-	    bmp.scaleX=bmp.scaleY=random;
+	    bmp.scaleX=bmp.scaleY=random>.3?random:random*2;
 	    bmp.rotation=Math.sin(random)*360;
 	    bmp.alpha=random>.5?random/2:random*2;
 	    iStage.addChild(bmp);

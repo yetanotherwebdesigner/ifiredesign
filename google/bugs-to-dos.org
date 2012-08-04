@@ -1,0 +1,29 @@
+* BUGS/TO-DOS
+
+** DONE ie8 fixes
+   CLOSED: [2012-08-04 Sat 14:48]
+
+** TODO ie7
+
+   - weird bg image shift
+
+** TODO .no-js
+
+** TODO mobile version
+
+** TODO accessibility   
+
+** DONE increase minimal scaleX & scaleY of icons in icons.js
+   CLOSED: [2012-08-04 Sat 14:54]
+   
+
+** code cleanup
+
+** minor keyboard enhancements
+
+   shift bg-image up for search-more & accounts when focused
+   shift about > a up when focused
+
+** examine reason for slow sliding 2nd time on
+
+
