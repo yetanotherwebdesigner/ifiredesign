@@ -23,14 +23,14 @@ $chrome-width:177px;
 @mixin embossedtext{ text-shadow:0 -1px $darkgreen; }
 /* GLOBAL STYLES */
 *{ margin:0;padding:0;transition-duration:.5s;-moz-transition-duration:.5s;-o-transition-duration:.5s;-webkit-transition-duration:.5s;}
-html{ background:$darkgreen-2 url("images/gradient-bg.png") repeat-x 0 50%;overflow:hidden; }
+html{ background:$darkgreen-2 url("http://iir.yetanotherwebdesigner.com/google/images/gradient-bg.png") repeat-x 0 50%;overflow:hidden; }
 body{ min-height:100%;font:13px normal Arial,Helvetica,sans-serif; }
 ul{ margin:0 auto; }
 ul,li{ list-style-type:none; }
 li{ margin:0 2*$tens $tens 2*$tens; }
 /* MAIN */
 #main{
-       width:100%;min-height:700px;height:100%;/* background:url("images/thought-balloon.png") no-repeat 50% 80px; */text-align:center;position:relative;z-index:4;
+       width:100%;min-height:700px;height:100%;/* background:url("http://iir.yetanotherwebdesigner.com/google/images/thought-balloon.png") no-repeat 50% 80px; */text-align:center;position:relative;z-index:4;
        form{ padding-top:351px; }
        ul li{ float:left;display:none;
               padding:{
@@ -56,30 +56,30 @@ section{ background:#fff;text-indent:-9999px;display:none;position:absolute;z-in
 li{ float:left;margin:0;  }
 /* SEARCH MORE */
 a{ display:block;&:link,&:visited{ text-decoration:none;} &:hover,&:active{ text-decoration:underline; }
-&[href="https://www.google.com/imghp?hl=en"]{ background:#fff url("images/sm-images-text.png") no-repeat 50% 50%; }
-&[href="http://maps.google.com/maps?hl=en"]{ background:darken(#fff,2) url("images/sm-maps-text.png") no-repeat 50% 50%; }
-&[href="https://play.google.com/?hl=en"]{ background:darken(#fff,4) url("images/sm-play-text.png") no-repeat 50% 50%; }
-&[href="http://www.youtube.com"]{ background:darken(#fff,6) url("images/sm-youtube-text.png") no-repeat 50% 50%; }
-&[href="http://news.google.com/nwshp?hl=en"]{ background:darken(#fff,8) url("images/sm-news-text.png") no-repeat 50% 50%; }
-&[href="http://books.google.com/bkshp?hl=en"]{ background:darken(#fff,10) url("images/sm-books-text.png") no-repeat 50% 50%; }
-&[href="http://www.google.com/finance"]{ background:darken(#fff,12) url("images/sm-finance-text.png") no-repeat 50% 50%; }
-&[href="http://video.google.com/?hl=en"]{ background:darken(#fff,16) url("images/sm-videos-text.png") no-repeat 50% 50%; }
-&[href="http://www.google.com/intl/en/options/"]{ background:darken(#fff,18) url("images/sm-more-text.png") no-repeat 50% 50%; } 
+&[href="https://www.google.com/imghp?hl=en"]{ background:#fff url("http://iir.yetanotherwebdesigner.com/google/images/sm-images-text.png") no-repeat 50% 50%; }
+&[href="http://maps.google.com/maps?hl=en"]{ background:darken(#fff,2) url("http://iir.yetanotherwebdesigner.com/google/images/sm-maps-text.png") no-repeat 50% 50%; }
+&[href="https://play.google.com/?hl=en"]{ background:darken(#fff,4) url("http://iir.yetanotherwebdesigner.com/google/images/sm-play-text.png") no-repeat 50% 50%; }
+&[href="http://www.youtube.com"]{ background:darken(#fff,6) url("http://iir.yetanotherwebdesigner.com/google/images/sm-youtube-text.png") no-repeat 50% 50%; }
+&[href="http://news.google.com/nwshp?hl=en"]{ background:darken(#fff,8) url("http://iir.yetanotherwebdesigner.com/google/images/sm-news-text.png") no-repeat 50% 50%; }
+&[href="http://books.google.com/bkshp?hl=en"]{ background:darken(#fff,10) url("http://iir.yetanotherwebdesigner.com/google/images/sm-books-text.png") no-repeat 50% 50%; }
+&[href="http://www.google.com/finance"]{ background:darken(#fff,12) url("http://iir.yetanotherwebdesigner.com/google/images/sm-finance-text.png") no-repeat 50% 50%; }
+&[href="http://video.google.com/?hl=en"]{ background:darken(#fff,16) url("http://iir.yetanotherwebdesigner.com/google/images/sm-videos-text.png") no-repeat 50% 50%; }
+&[href="http://www.google.com/intl/en/options/"]{ background:darken(#fff,18) url("http://iir.yetanotherwebdesigner.com/google/images/sm-more-text.png") no-repeat 50% 50%; } 
 /* ACCOUNTS */
-&[href="https://accounts.google.com/ServiceLogin?hl=en&continue=https://www.google.com/"]{ background:darken(#fff,35) url("images/acc-signin-text.png") no-repeat 50% 50%; }
-&[href="https://plus.google.com/?gpsrc=ogpy0"]{ background:darken(#fff,31) url("images/acc-plus-text.png") no-repeat 50% 50%; }
-&[href="https://mail.google.com/mail/"]{ background:darken(#fff,27) url("images/acc-gmail-text.png") no-repeat 50% 50%; }
-&[href="https://docs.google.com/"]{ background:darken(#fff,22) url("images/acc-docs-text.png") no-repeat 50% 50%; }
-&[href="https://www.google.com/calendar"]{ background:darken(#fff,18) url("images/acc-calendar-text.png") no-repeat 50% 50%; }
-&[href="https://wallet.google.com/manage"]{ background:darken(#fff,14) url("images/acc-wallet-text.png") no-repeat 50% 50%; }
-&[href="http://www.blogger.com"]{ background:darken(#fff,10) url("images/acc-blogger-text.png") no-repeat 50% 50%; }
-&[href="http://www.google.com/reader/?hl=en"]{ background:darken(#fff,6) url("images/acc-reader-text.png") no-repeat 50% 50%; }
-&[href="http://picasaweb.google.com/home?hl=en"]{ background:darken(#fff,2) url("images/acc-photos-text.png") no-repeat 50% 50%; }
+&[href="https://accounts.google.com/ServiceLogin?hl=en&continue=https://www.google.com/"]{ background:darken(#fff,35) url("http://iir.yetanotherwebdesigner.com/google/images/acc-signin-text.png") no-repeat 50% 50%; }
+&[href="https://plus.google.com/?gpsrc=ogpy0"]{ background:darken(#fff,31) url("http://iir.yetanotherwebdesigner.com/google/images/acc-plus-text.png") no-repeat 50% 50%; }
+&[href="https://mail.google.com/mail/"]{ background:darken(#fff,27) url("http://iir.yetanotherwebdesigner.com/google/images/acc-gmail-text.png") no-repeat 50% 50%; }
+&[href="https://docs.google.com/"]{ background:darken(#fff,22) url("http://iir.yetanotherwebdesigner.com/google/images/acc-docs-text.png") no-repeat 50% 50%; }
+&[href="https://www.google.com/calendar"]{ background:darken(#fff,18) url("http://iir.yetanotherwebdesigner.com/google/images/acc-calendar-text.png") no-repeat 50% 50%; }
+&[href="https://wallet.google.com/manage"]{ background:darken(#fff,14) url("http://iir.yetanotherwebdesigner.com/google/images/acc-wallet-text.png") no-repeat 50% 50%; }
+&[href="http://www.blogger.com"]{ background:darken(#fff,10) url("http://iir.yetanotherwebdesigner.com/google/images/acc-blogger-text.png") no-repeat 50% 50%; }
+&[href="http://www.google.com/reader/?hl=en"]{ background:darken(#fff,6) url("http://iir.yetanotherwebdesigner.com/google/images/acc-reader-text.png") no-repeat 50% 50%; }
+&[href="http://picasaweb.google.com/home?hl=en"]{ background:darken(#fff,2) url("http://iir.yetanotherwebdesigner.com/google/images/acc-photos-text.png") no-repeat 50% 50%; }
 }
 }
 #search-more{ left:1024px;top:60px;height:208px;background:darken(#fff,18);@include shadow(bottom,darken($lightgrey,16));}
 #accounts{ left:-1024px;top:268px;height:208px;width:1024px;background:#fff;}
-#chrome{ text-indent:0;left:1024px;top:474px;height:166px;background:#fff url("images/chrome-pane-image.png") no-repeat $padding 50%;width:1024px;font-weight:bold;
+#chrome{ text-indent:0;left:1024px;top:474px;height:166px;background:#fff url("http://iir.yetanotherwebdesigner.com/google/images/chrome-pane-image.png") no-repeat $padding 50%;width:1024px;font-weight:bold;
          div{ position:absolute;top:50%;left:$chrome-width + (2*$padding); }
          span,a{ float:left;text-transform:capitalize;font-size:16px;padding-right:$tens; }
 span,a{ &:after{ content:"."; } }
@@ -97,10 +97,10 @@ canvas{ position:absolute;top:0;left:0; }
 #dots{ z-index:1; }
 .no-canvas canvas{ width:100%;height:100%; }
 .no-canvas #main-balloon img{ width:650px;display:block;margin:80px auto 0; }
-.no-canvas #dots{ background:url("images/dots-bg.png") repeat 0 0;opacity:.1;filter:alpha(opacity=10);}
-.no-canvas #gradient{ background:url("images/gradient-bg.png") repeat-x 0 50%;  }
+.no-canvas #dots{ background:url("http://iir.yetanotherwebdesigner.com/google/images/dots-bg.png") repeat 0 0;opacity:.1;filter:alpha(opacity=10);}
+.no-canvas #gradient{ background:url("http://iir.yetanotherwebdesigner.com/google/images/gradient-bg.png") repeat-x 0 50%;  }
 .no-canvas #icons{ display:none; }
 /* IE FIXES */
 .lt-ie9 #main input{ display:inline; }
-.lt-ie8 { background:darken($darkgreen-2,10) url("images/thought-balloon.png") no-repeat 40% 80px; }
+.lt-ie8 { background:darken($darkgreen-2,10) url("http://iir.yetanotherwebdesigner.com/google/images/thought-balloon.png") no-repeat 40% 80px; }
 .lt-ie8 #main-balloon,.lt-ie8 #dots{ display:none; }
