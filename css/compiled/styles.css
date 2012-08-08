@@ -1,0 +1,73 @@
+/* VARIABLES */
+/* MIXINS */
+/* GLOBAL */
+@font-face {
+  font-family: 'DroidSansRegular';
+  src: url("/fonts/droidsans/DroidSans-Bold-webfont.eot");
+  src: url("/fonts/droidsans/DroidSans-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/droidsans/DroidSans-Bold-webfont.woff") format("woff"), url("/fonts/droidsans/DroidSans-Bold-webfont.ttf") format("truetype"), url("/fonts/droidsans/DroidSans-Bold-webfont.svg#DroidSans-Bold-webfont") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+html {
+  background: #000;
+  color: #fff;
+  text-align: center; }
+
+body {
+  width: 85%;
+  margin: 40px auto;
+  font-family: "DroidSansRegular",Arial,Helvetica,sans-serif;
+  font-size: 16px; }
+
+h1 {
+  font-size: 240%;
+  text-transform: uppercase;
+  background: url("images/logo.png") no-repeat 25% 0;
+  margin-left: 50px;
+  width: 100%; }
+
+h2 {
+  font-size: 150%; }
+
+p {
+  font-size: 100%;
+  line-height: 1.6em;
+  color: #cccccc;
+  margin: 0 0 16px; }
+
+a {
+  border-bottom: 1px dashed white;
+  text-decoration: none;
+  color: white;
+  font-weight: bold; }
+
+a[href="google"] {
+  border-bottom: 1px dashed #086d12;
+  text-decoration: none;
+  color: #086d12;
+  font-weight: bold; }
+
+em {
+  padding-right: 3px; }
+
+article {
+  margin: 40px 0; }
+
+ul {
+  padding: 40px 0; }
+
+ul li {
+  float: right;
+  list-style-type: none; }
+
+small {
+  font-size: 10px;
+  font-color: gray;
+  font-family: Arial,Helvetica,sans-serif; }
+
+/* NO-JS */
+.no-js .twitter-share-button {
+  border-bottom: 1px dashed #75c6f7;
+  text-decoration: none;
+  color: #75c6f7;
+  font-weight: bold; }
