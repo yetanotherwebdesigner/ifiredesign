@@ -105,7 +105,6 @@ nav {
     font-weight: bold;
     line-height: 27px;
     margin: 10px 0;
-    text-align: center;
     color: white;
     text-decoration: none; }
     nav a:focus {
@@ -119,7 +118,8 @@ nav {
   left: 20px;
   border-radius: 0 0 10px 10px; }
   .no-js nav a {
-    display: inline; }
+    display: inline;
+    text-align: center; }
     .no-js nav a[href|="#about"] {
       left: 0; }
     .no-js nav a[href|="#chrome"] {
@@ -134,14 +134,14 @@ nav {
   position: static;
   display: block;
   width: 233.5px;
-  margin: 0 10px 40px 0;
+  margin: 10px 10px 40px 0;
   float: left;
   text-indent: 0;
   height: auto;
   border-radius: 10px; }
 
 .no-js section ul, .no-js section div {
-  padding: 40px 20px; }
+  padding: 80px 20px; }
 
 .no-js #search-more a, .no-js #accounts a {
   color: #1a1a1a;
@@ -149,22 +149,21 @@ nav {
   background-color: transparent; }
 
 .no-js #search-more {
-  background: #fff;
+  background: white url("../../images/nojs-searchmore-bg.png") no-repeat 50% 40px;
   border-bottom: 7px solid #676767; }
 
 .no-js #accounts {
-  background-color: #f2f2f2; }
+  background: #f2f2f2 url("../../images/nojs-accounts-bg.png") no-repeat 50% 40px; }
 
 .no-js #chrome {
-  background-color: #e6e6e6;
-  background-image: none; }
+  background: #e6e6e6 url("../../images/nojs-chrome-bg.png") no-repeat 50% 40px; }
   .no-js #chrome div {
-    float: left; }
-    .no-js #chrome div:before {
-      content: url("http://iir.yetanotherwebdesigner.com/google/images/chrome-pane-image.png"); }
+    float: left;
+    /* &:before{ content:} */ }
   .no-js #chrome span, .no-js #chrome a {
-    padding: 20px 20px 10px;
-    text-align: center; }
+    padding: 10px 20px 10px;
+    text-align: center;
+    font-size: 13px; }
 
 .no-js section li {
   float: none;
@@ -172,6 +171,9 @@ nav {
   .no-js section li a {
     padding: 10px 0;
     font-weight: bold; }
+
+.no-js #about {
+  background: #161e07 url("../../images/nojs-about-bg.png") no-repeat 50% 40px; }
 
 section {
   background: #fff;

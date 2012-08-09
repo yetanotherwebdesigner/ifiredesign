@@ -1,9 +1,9 @@
 var wWidth=$(window).width(),wHeight=$(window).height();
-$("nav a").css({width:(wWidth/4)|0,left:0,display:"inline"});
-$("nav a+a").css({left:(wWidth/4)|0});
-$("nav a+a+a").css({left:2*(wWidth/4)|0});
-$("nav a+a+a+a").css({left:3*(wWidth/4)|0});
-$("#search-more").css({left:wWidth,height:((wHeight-60)*5/16)|0,width:wWidth});
+$("nav a").css({width:(wWidth/4)|0,right:0,display:"inline"});
+$("nav a+a").css({right:(wWidth/4)|0});
+$("nav a+a+a").css({right:2*(wWidth/4)|0});
+$("nav a+a+a+a").css({right:3*(wWidth/4)|0});
+$("#search-more").css({right:wWidth,height:((wHeight-60)*5/16)|0,width:wWidth});
 $("#search-more li a").css({height:((wHeight-60)*5/16)|0,width:(wWidth/9)|0});
 $("#accounts").css({left:-wWidth,top:60+((wHeight-60)*5/16)|0,height:((wHeight-60)*5/16),width:wWidth});
 $("#accounts li a").css({height:((wHeight-60)*5/16)|0,width:(wWidth/9)|0});
