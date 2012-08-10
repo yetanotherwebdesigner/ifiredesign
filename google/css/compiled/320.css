@@ -1,0 +1,39 @@
+#main form {
+  padding-top: 191px;
+  width: 280px; }
+  #main form input {
+    width: 80%;
+    font-size: 13px;
+    padding: 2px 0; }
+
+#accounts, #chrome, #about {
+  top: 60px; }
+
+#search-more {
+  z-index: 60; }
+
+#accounts {
+  z-index: 61; }
+
+#chrome {
+  z-index: 62;
+  background: #e6e6e6 url("http://iir.yetanotherwebdesigner.com/google/images/chrome-pane-image.png") no-repeat 50% 40px; }
+  #chrome div {
+    position: static;
+    margin: 100px auto; }
+    #chrome div span, #chrome div a {
+      float: none;
+      display: block;
+      width: 100%;
+      padding: 20px 20px 10px;
+      text-align: center; }
+
+#about {
+  z-index: 63; }
+  #about ul {
+    position: static;
+    margin: 40px auto; }
+    #about ul li {
+      float: none; }
+      #about ul li a {
+        padding: 10px; }

@@ -1,0 +1,27 @@
+$padding:40px;
+$tens:10px;
+#main{
+       form{ padding-top:191px;width:280px;
+             input{
+                    width:80%;font-size:13px;padding:2px 0;
+                    }
+             }
+       }
+#accounts,#chrome,#about{ top:60px;}
+#search-more{ z-index:60; }
+#accounts{ z-index:61; }
+
+#chrome{ z-index:62;background:darken(#fff,10) url("http://iir.yetanotherwebdesigner.com/google/images/chrome-pane-image.png") no-repeat 50% $padding;
+                div{
+                      position:static;margin:5*$padding/2 auto;
+
+span,a{ float:none;display:block;width:100%;padding:$padding/2 $padding/2 $tens;text-align:center; }                     }
+}
+#about{ z-index:63; 
+            ul{
+                position:static;margin:$padding auto;
+                li{ float:none;
+                    a{ padding:$tens; }
+                    }
+                }
+}

@@ -34,15 +34,14 @@ li{ margin:0 2*$tens $tens 2*$tens; }
 /* MAIN */
 #main{
        width:100%;min-height:700px;height:100%;text-align:center;position:relative;z-index:4;
-       form{ padding-top:351px; }
        ul li{ float:left;display:none;
               padding:{
                         right:10px;
                         top:10px;
                         }
               }
-form{ width:561px;margin:0 auto; }
-input{ display:none;/* to be invoked _after_ balloon pops out */text-align:center;font:{ size:16px;}width:373px;padding:5px 0;margin:0 auto;color:$darkgreen;font:{ weight:bold;size:16px;} background-color:$lightgrey;
+form{ margin:0 auto; }
+input{ display:none;/* to be invoked _after_ balloon pops out */text-align:center;margin:0 auto;color:$darkgreen;font:{ weight:bold;size:16px;} background-color:$lightgrey;
 border:{ radius:20px;bottom:{ style:none; }left:{ style:solid;width:5px;color:darken($lightgrey,10); }right:{ style:none; }top:{ style:solid;width:3px;color:darken($lightgrey,10); } }}
 ul{ width:($icon-dimensions+$search-options-padright)*$search-options;height:26px;overflow:hidden;margin:20px auto; }
        }

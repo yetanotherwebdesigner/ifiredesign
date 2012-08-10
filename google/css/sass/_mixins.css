@@ -1,0 +1,6 @@
+/* MIXINS */
+@mixin shadow($side,$color:darken($darkgreen,50),$thickness:7px){
+  border-#{ $side }:#{ $thickness } solid #{ $color };
+}
+@mixin centertext{ text-align:center; }
+@mixin embossedtext{ text-shadow:0 -1px $darkgreen; }
