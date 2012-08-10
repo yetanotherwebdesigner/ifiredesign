@@ -12,8 +12,48 @@
 #search-more {
   z-index: 60; }
 
+#search-more a[href="https://www.google.com/imghp?hl=en"] {
+  background: white url("http://iir.yetanotherwebdesigner.com/google/images/sm-images-text-m.png") no-repeat 50% 50%; }
+#search-more a[href="http://maps.google.com/maps?hl=en"] {
+  background: #fafafa url("http://iir.yetanotherwebdesigner.com/google/images/sm-maps-text-m.png") no-repeat 50% 50%; }
+#search-more a[href="https://play.google.com/?hl=en"] {
+  background: #f5f5f5 url("http://iir.yetanotherwebdesigner.com/google/images/sm-play-text-m.png") no-repeat 50% 50%; }
+#search-more a[href="http://www.youtube.com"] {
+  background: #f0f0f0 url("http://iir.yetanotherwebdesigner.com/google/images/sm-youtube-text-m.png") no-repeat 50% 50%; }
+#search-more a[href="http://news.google.com/nwshp?hl=en"] {
+  background: #ebebeb url("http://iir.yetanotherwebdesigner.com/google/images/sm-news-text-m.png") no-repeat 50% 50%; }
+#search-more a[href="http://books.google.com/bkshp?hl=en"] {
+  background: #e6e6e6 url("http://iir.yetanotherwebdesigner.com/google/images/sm-books-text-m.png") no-repeat 50% 50%; }
+#search-more a[href="http://www.google.com/finance"] {
+  background: #e0e0e0 url("http://iir.yetanotherwebdesigner.com/google/images/sm-finance-text-m.png") no-repeat 50% 50%; }
+#search-more a[href="http://video.google.com/?hl=en"] {
+  background: #d6d6d6 url("http://iir.yetanotherwebdesigner.com/google/images/sm-videos-text-m.png") no-repeat 50% 50%; }
+#search-more a[href="http://www.google.com/intl/en/options/"] {
+  background: #d1d1d1 url("http://iir.yetanotherwebdesigner.com/google/images/sm-more-text-m.png") no-repeat 50% 50%; }
+
 #accounts {
   z-index: 61; }
+
+#accounts a[href="https://accounts.google.com/ServiceLogin?hl=en&continue=https://www.google.com/"] {
+  background: #a6a6a6 url("http://iir.yetanotherwebdesigner.com/google/images/acc-signin-text-m.png") no-repeat 50% 50%; }
+#accounts a[href="https://plus.google.com/?gpsrc=ogpy0"] {
+  background: #b0b0b0 url("http://iir.yetanotherwebdesigner.com/google/images/acc-plus-text-m.png") no-repeat 50% 50%; }
+#accounts a[href="https://mail.google.com/mail/"] {
+  background: #bababa url("http://iir.yetanotherwebdesigner.com/google/images/acc-gmail-text-m.png") no-repeat 50% 50%; }
+#accounts a[href="https://docs.google.com/"] {
+  background: #c7c7c7 url("http://iir.yetanotherwebdesigner.com/google/images/acc-docs-text-m.png") no-repeat 50% 50%; }
+#accounts a[href="https://www.google.com/calendar"] {
+  background: #d1d1d1 url("http://iir.yetanotherwebdesigner.com/google/images/acc-calendar-text-m.png") no-repeat 50% 50%; }
+#accounts a[href="https://www.google.com/calendar"] {
+  background: #d1d1d1 url("http://iir.yetanotherwebdesigner.com/google/images/acc-calendar-text-m.png") no-repeat 50% 50%; }
+#accounts a[href="https://wallet.google.com/manage"] {
+  background: #dbdbdb url("http://iir.yetanotherwebdesigner.com/google/images/acc-wallet-text-m.png") no-repeat 50% 50%; }
+#accounts a[href="http://www.blogger.com"] {
+  background: #e6e6e6 url("http://iir.yetanotherwebdesigner.com/google/images/acc-blogger-text-m.png") no-repeat 50% 50%; }
+#accounts a[href="http://www.google.com/reader/?hl=en"] {
+  background: #f0f0f0 url("http://iir.yetanotherwebdesigner.com/google/images/acc-reader-text-m.png") no-repeat 50% 50%; }
+#accounts a[href="http://picasaweb.google.com/home?hl=en"] {
+  background: #fafafa url("http://iir.yetanotherwebdesigner.com/google/images/acc-photos-text-m.png") no-repeat 50% 50%; }
 
 #chrome {
   z-index: 62;

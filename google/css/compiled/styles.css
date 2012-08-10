@@ -174,54 +174,16 @@ section {
   position: absolute;
   z-index: 7;
   width: 1024px;
-  border-bottom: 7px solid #676767;
-  /* SEARCH MORE */ }
+  border-bottom: 7px solid #676767; }
   section li {
     float: left;
     margin: 0; }
   section a {
-    display: block;
-    /* ACCOUNTS */ }
+    display: block; }
     section a:link, section a:visited {
       text-decoration: none; }
     section a:hover, section a:active {
       text-decoration: underline; }
-    section a[href="https://www.google.com/imghp?hl=en"] {
-      background: white url("http://iir.yetanotherwebdesigner.com/google/images/sm-images-text.png") no-repeat 50% 50%; }
-    section a[href="http://maps.google.com/maps?hl=en"] {
-      background: #fafafa url("http://iir.yetanotherwebdesigner.com/google/images/sm-maps-text.png") no-repeat 50% 50%; }
-    section a[href="https://play.google.com/?hl=en"] {
-      background: #f5f5f5 url("http://iir.yetanotherwebdesigner.com/google/images/sm-play-text.png") no-repeat 50% 50%; }
-    section a[href="http://www.youtube.com"] {
-      background: #f0f0f0 url("http://iir.yetanotherwebdesigner.com/google/images/sm-youtube-text.png") no-repeat 50% 50%; }
-    section a[href="http://news.google.com/nwshp?hl=en"] {
-      background: #ebebeb url("http://iir.yetanotherwebdesigner.com/google/images/sm-news-text.png") no-repeat 50% 50%; }
-    section a[href="http://books.google.com/bkshp?hl=en"] {
-      background: #e6e6e6 url("http://iir.yetanotherwebdesigner.com/google/images/sm-books-text.png") no-repeat 50% 50%; }
-    section a[href="http://www.google.com/finance"] {
-      background: #e0e0e0 url("http://iir.yetanotherwebdesigner.com/google/images/sm-finance-text.png") no-repeat 50% 50%; }
-    section a[href="http://video.google.com/?hl=en"] {
-      background: #d6d6d6 url("http://iir.yetanotherwebdesigner.com/google/images/sm-videos-text.png") no-repeat 50% 50%; }
-    section a[href="http://www.google.com/intl/en/options/"] {
-      background: #d1d1d1 url("http://iir.yetanotherwebdesigner.com/google/images/sm-more-text.png") no-repeat 50% 50%; }
-    section a[href="https://accounts.google.com/ServiceLogin?hl=en&continue=https://www.google.com/"] {
-      background: #a6a6a6 url("http://iir.yetanotherwebdesigner.com/google/images/acc-signin-text.png") no-repeat 50% 50%; }
-    section a[href="https://plus.google.com/?gpsrc=ogpy0"] {
-      background: #b0b0b0 url("http://iir.yetanotherwebdesigner.com/google/images/acc-plus-text.png") no-repeat 50% 50%; }
-    section a[href="https://mail.google.com/mail/"] {
-      background: #bababa url("http://iir.yetanotherwebdesigner.com/google/images/acc-gmail-text.png") no-repeat 50% 50%; }
-    section a[href="https://docs.google.com/"] {
-      background: #c7c7c7 url("http://iir.yetanotherwebdesigner.com/google/images/acc-docs-text.png") no-repeat 50% 50%; }
-    section a[href="https://www.google.com/calendar"] {
-      background: #d1d1d1 url("http://iir.yetanotherwebdesigner.com/google/images/acc-calendar-text.png") no-repeat 50% 50%; }
-    section a[href="https://wallet.google.com/manage"] {
-      background: #dbdbdb url("http://iir.yetanotherwebdesigner.com/google/images/acc-wallet-text.png") no-repeat 50% 50%; }
-    section a[href="http://www.blogger.com"] {
-      background: #e6e6e6 url("http://iir.yetanotherwebdesigner.com/google/images/acc-blogger-text.png") no-repeat 50% 50%; }
-    section a[href="http://www.google.com/reader/?hl=en"] {
-      background: #f0f0f0 url("http://iir.yetanotherwebdesigner.com/google/images/acc-reader-text.png") no-repeat 50% 50%; }
-    section a[href="http://picasaweb.google.com/home?hl=en"] {
-      background: #fafafa url("http://iir.yetanotherwebdesigner.com/google/images/acc-photos-text.png") no-repeat 50% 50%; }
 
 #search-more {
   left: 1024px;
@@ -242,18 +204,8 @@ section {
   left: 1024px;
   top: 474px;
   height: 166px;
-  background: white url("http://iir.yetanotherwebdesigner.com/google/images/chrome-pane-image.png") no-repeat 40px 50%;
   width: 1024px;
   font-weight: bold; }
-  #chrome div {
-    position: absolute;
-    top: 50%;
-    left: 257px; }
-  #chrome span, #chrome a {
-    float: left;
-    text-transform: capitalize;
-    font-size: 16px;
-    padding-right: 10px; }
   #chrome span:after, #chrome a:after {
     content: "."; }
   #chrome a {

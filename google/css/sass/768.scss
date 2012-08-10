@@ -1,5 +1,38 @@
+$padding:40px;$chrome-width:177px;$tens:10px;
 #main {
         form{ padding-top:351px;width:561px;
               input{ width:373px;font-size:16px;padding:5px 0;}
 }
 }
+#search-more a{
+ &[href="https://www.google.com/imghp?hl=en"]{ background:#fff url("http://iir.yetanotherwebdesigner.com/google/images/sm-images-text.png") no-repeat 50% 50%; }
+&[href="http://maps.google.com/maps?hl=en"]{ background:darken(#fff,2) url("http://iir.yetanotherwebdesigner.com/google/images/sm-maps-text.png") no-repeat 50% 50%; }
+&[href="https://play.google.com/?hl=en"]{ background:darken(#fff,4) url("http://iir.yetanotherwebdesigner.com/google/images/sm-play-text.png") no-repeat 50% 50%; }
+&[href="http://www.youtube.com"]{ background:darken(#fff,6) url("http://iir.yetanotherwebdesigner.com/google/images/sm-youtube-text.png") no-repeat 50% 50%; }
+&[href="http://news.google.com/nwshp?hl=en"]{ background:darken(#fff,8) url("http://iir.yetanotherwebdesigner.com/google/images/sm-news-text.png") no-repeat 50% 50%; }
+&[href="http://books.google.com/bkshp?hl=en"]{ background:darken(#fff,10) url("http://iir.yetanotherwebdesigner.com/google/images/sm-books-text.png") no-repeat 50% 50%; }
+&[href="http://www.google.com/finance"]{ background:darken(#fff,12) url("http://iir.yetanotherwebdesigner.com/google/images/sm-finance-text.png") no-repeat 50% 50%; }
+&[href="http://video.google.com/?hl=en"]{ background:darken(#fff,16) url("http://iir.yetanotherwebdesigner.com/google/images/sm-videos-text.png") no-repeat 50% 50%; }
+&[href="http://www.google.com/intl/en/options/"]{ background:darken(#fff,18) url("http://iir.yetanotherwebdesigner.com/google/images/sm-more-text.png") no-repeat 50% 50%; } 
+              }
+#accounts a{
+&[href="https://accounts.google.com/ServiceLogin?hl=en&continue=https://www.google.com/"]{ background:darken(#fff,35) url("http://iir.yetanotherwebdesigner.com/google/images/acc-signin-text.png") no-repeat 50% 50%; }
+&[href="https://plus.google.com/?gpsrc=ogpy0"]{ background:darken(#fff,31) url("http://iir.yetanotherwebdesigner.com/google/images/acc-plus-text.png") no-repeat 50% 50%; }
+&[href="https://mail.google.com/mail/"]{ background:darken(#fff,27) url("http://iir.yetanotherwebdesigner.com/google/images/acc-gmail-text.png") no-repeat 50% 50%; }
+&[href="https://docs.google.com/"]{ background:darken(#fff,22) url("http://iir.yetanotherwebdesigner.com/google/images/acc-docs-text.png") no-repeat 50% 50%; }                          
+&[href="https://www.google.com/calendar"]{ background:darken(#fff,18) url("http://iir.yetanotherwebdesigner.com/google/images/acc-calendar-text.png") no-repeat 50% 50%; }
+&[href="https://wallet.google.com/manage"]{ background:darken(#fff,14) url("http://iir.yetanotherwebdesigner.com/google/images/acc-wallet-text.png") no-repeat 50% 50%; }
+&[href="http://www.blogger.com"]{ background:darken(#fff,10) url("http://iir.yetanotherwebdesigner.com/google/images/acc-blogger-text.png") no-repeat 50% 50%; }
+&[href="http://www.google.com/reader/?hl=en"]{ background:darken(#fff,6) url("http://iir.yetanotherwebdesigner.com/google/images/acc-reader-text.png") no-repeat 50% 50%; }
+&[href="http://picasaweb.google.com/home?hl=en"]{ background:darken(#fff,2) url("http://iir.yetanotherwebdesigner.com/google/images/acc-photos-text.png") no-repeat 50% 50%; }
+   }
+#chrome{ background:#fff url("http://iir.yetanotherwebdesigner.com/google/images/chrome-pane-image.png") no-repeat $padding 50%;width:1024px;
+         div{ position:absolute;top:50%;left:$chrome-width + (2*$padding);
+              span,a{ float:left;width:auto;text-transform:capitalize;font-size:16px;padding:0 $tens 0 0; }
+              }
+         }
+#about{
+        ul li{ float:left;
+               a{ padding:0; }
+               }
+        }

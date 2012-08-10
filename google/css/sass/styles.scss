@@ -80,35 +80,13 @@ span,a{ padding:$padding/2 $padding/2 $tens;text-align:center; }
 section{ background:#fff;text-indent:-9999px;display:none;position:absolute;z-index:7;width:1024px;@include shadow(bottom,darken($lightgrey,50));
 
          li{ float:left;margin:0;  }
-/* SEARCH MORE */
 a{ display:block;&:link,&:visited{ text-decoration:none;} &:hover,&:active{ text-decoration:underline; }
-&[href="https://www.google.com/imghp?hl=en"]{ background:#fff url("http://iir.yetanotherwebdesigner.com/google/images/sm-images-text.png") no-repeat 50% 50%; }
-&[href="http://maps.google.com/maps?hl=en"]{ background:darken(#fff,2) url("http://iir.yetanotherwebdesigner.com/google/images/sm-maps-text.png") no-repeat 50% 50%; }
-&[href="https://play.google.com/?hl=en"]{ background:darken(#fff,4) url("http://iir.yetanotherwebdesigner.com/google/images/sm-play-text.png") no-repeat 50% 50%; }
-&[href="http://www.youtube.com"]{ background:darken(#fff,6) url("http://iir.yetanotherwebdesigner.com/google/images/sm-youtube-text.png") no-repeat 50% 50%; }
-&[href="http://news.google.com/nwshp?hl=en"]{ background:darken(#fff,8) url("http://iir.yetanotherwebdesigner.com/google/images/sm-news-text.png") no-repeat 50% 50%; }
-&[href="http://books.google.com/bkshp?hl=en"]{ background:darken(#fff,10) url("http://iir.yetanotherwebdesigner.com/google/images/sm-books-text.png") no-repeat 50% 50%; }
-&[href="http://www.google.com/finance"]{ background:darken(#fff,12) url("http://iir.yetanotherwebdesigner.com/google/images/sm-finance-text.png") no-repeat 50% 50%; }
-&[href="http://video.google.com/?hl=en"]{ background:darken(#fff,16) url("http://iir.yetanotherwebdesigner.com/google/images/sm-videos-text.png") no-repeat 50% 50%; }
-&[href="http://www.google.com/intl/en/options/"]{ background:darken(#fff,18) url("http://iir.yetanotherwebdesigner.com/google/images/sm-more-text.png") no-repeat 50% 50%; } 
-/* ACCOUNTS */
-&[href="https://accounts.google.com/ServiceLogin?hl=en&continue=https://www.google.com/"]{ background:darken(#fff,35) url("http://iir.yetanotherwebdesigner.com/google/images/acc-signin-text.png") no-repeat 50% 50%; }
-&[href="https://plus.google.com/?gpsrc=ogpy0"]{ background:darken(#fff,31) url("http://iir.yetanotherwebdesigner.com/google/images/acc-plus-text.png") no-repeat 50% 50%; }
-&[href="https://mail.google.com/mail/"]{ background:darken(#fff,27) url("http://iir.yetanotherwebdesigner.com/google/images/acc-gmail-text.png") no-repeat 50% 50%; }
-&[href="https://docs.google.com/"]{ background:darken(#fff,22) url("http://iir.yetanotherwebdesigner.com/google/images/acc-docs-text.png") no-repeat 50% 50%; }
-&[href="https://www.google.com/calendar"]{ background:darken(#fff,18) url("http://iir.yetanotherwebdesigner.com/google/images/acc-calendar-text.png") no-repeat 50% 50%; }
-&[href="https://wallet.google.com/manage"]{ background:darken(#fff,14) url("http://iir.yetanotherwebdesigner.com/google/images/acc-wallet-text.png") no-repeat 50% 50%; }
-&[href="http://www.blogger.com"]{ background:darken(#fff,10) url("http://iir.yetanotherwebdesigner.com/google/images/acc-blogger-text.png") no-repeat 50% 50%; }
-&[href="http://www.google.com/reader/?hl=en"]{ background:darken(#fff,6) url("http://iir.yetanotherwebdesigner.com/google/images/acc-reader-text.png") no-repeat 50% 50%; }
-&[href="http://picasaweb.google.com/home?hl=en"]{ background:darken(#fff,2) url("http://iir.yetanotherwebdesigner.com/google/images/acc-photos-text.png") no-repeat 50% 50%; }
 }
 }
 #search-more{ left:1024px;top:60px;height:208px;background:darken(#fff,18);@include shadow(bottom,darken($lightgrey,16));}
 #accounts{ left:-1024px;top:268px;height:208px;width:1024px;background:#fff;}
-#chrome{ text-indent:0;left:1024px;top:474px;height:166px;background:#fff url("http://iir.yetanotherwebdesigner.com/google/images/chrome-pane-image.png") no-repeat $padding 50%;width:1024px;font-weight:bold;
-         div{ position:absolute;top:50%;left:$chrome-width + (2*$padding); }
-         span,a{ float:left;text-transform:capitalize;font-size:16px;padding-right:$tens; }
-span,a{ &:after{ content:"."; } }
+#chrome{ text-indent:0;left:1024px;top:474px;height:166px;width:1024px;font-weight:bold;
+         span,a{ &:after{ content:"."; } }
 a{ color:#1a1a1a;/* &:after{ content:"\00bb"; } */ }
 }
 #about{ text-indent:0;left:-1024px;top:640px;height:84px;background:$darkgreen;width:1024px;@include shadow(bottom,darken($darkgreen,5));
