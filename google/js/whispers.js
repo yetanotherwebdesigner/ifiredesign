@@ -1,9 +1,9 @@
-$("nav a").css({width:(cWidth/4)|0,left:0,display:"inline"});
-$("nav a+a").css({left:(cWidth/4)|0});
-$("nav a+a+a").css({left:2*(cWidth/4)|0});
-$("nav a+a+a+a").css({left:3*(cWidth/4)|0});
+$("nav a").css({width:(cWidth/4)|0,right:0,display:"inline"});
+$("nav a+a").css({right:(cWidth/4)|0});
+$("nav a+a+a").css({right:2*(cWidth/4)|0});
+$("nav a+a+a+a").css({right:3*(cWidth/4)|0});
 if(cWidth>768){//if tablet/desktop
-    $("#search-more").css({left:cWidth,height:((cHeight-60)*5/16)|0,width:cWidth});
+    $("#search-more").css({right:cWidth,height:((cHeight-60)*5/16)|0,width:cWidth});
     $("#search-more li a").css({height:((cHeight-60)*5/16)|0,width:(cWidth/9)|0});
     $("#accounts").css({left:-cWidth,top:60+((cHeight-60)*5/16)|0,height:((cHeight-60)*5/16),width:cWidth});
     $("#accounts li a").css({height:((cHeight-60)*5/16)|0,width:(cWidth/9)|0});
