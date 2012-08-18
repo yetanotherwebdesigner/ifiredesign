@@ -114,7 +114,10 @@ canvas{ position:absolute;top:0;left:0; }
 .no-canvas #gradient{ background:url("http://iir.yetanotherwebdesigner.com/google/images/gradient-bg.png") repeat-x 0 50%;  }
 .no-canvas #icons{ display:none; }
 /* IE FIXES */
-.lt-ie9 #main input{ display:inline; }
+.lt-ie9 #main{ top:0;
+               input{ display:inline; }
+               }
+
 .lt-ie9{ background-image:none; }
 .lt-ie8 { background:darken($darkgreen-2,10) url("http://iir.yetanotherwebdesigner.com/google/images/thought-balloon.png") no-repeat 40% 80px; }
 .lt-ie8 #main-balloon,.lt-ie8 #dots{ display:none; }

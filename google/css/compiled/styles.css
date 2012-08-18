@@ -281,8 +281,10 @@ canvas {
   display: none; }
 
 /* IE FIXES */
-.lt-ie9 #main input {
-  display: inline; }
+.lt-ie9 #main {
+  top: 0; }
+  .lt-ie9 #main input {
+    display: inline; }
 
 .lt-ie9 {
   background-image: none; }
