@@ -1,25 +1,24 @@
-var wWidth=$(window).width(),wHeight=$(window).height();
-$("nav a").css({width:(wWidth/4)|0,left:0,display:"inline"});
-$("nav a+a").css({left:(wWidth/4)|0});
-$("nav a+a+a").css({left:2*(wWidth/4)|0});
-$("nav a+a+a+a").css({left:3*(wWidth/4)|0});
-if(wWidth>768){//if tablet/desktop
-    $("#search-more").css({left:wWidth,height:((wHeight-60)*5/16)|0,width:wWidth});
-    $("#search-more li a").css({height:((wHeight-60)*5/16)|0,width:(wWidth/9)|0});
-    $("#accounts").css({left:-wWidth,top:60+((wHeight-60)*5/16)|0,height:((wHeight-60)*5/16),width:wWidth});
-    $("#accounts li a").css({height:((wHeight-60)*5/16)|0,width:(wWidth/9)|0});
-    $("#chrome").css({left:wWidth,top:60+((wHeight-60)*5/8)|0,height:((wHeight-60)/4),width:wWidth});
+$("nav a").css({width:(cWidth/4)|0,left:0,display:"inline"});
+$("nav a+a").css({left:(cWidth/4)|0});
+$("nav a+a+a").css({left:2*(cWidth/4)|0});
+$("nav a+a+a+a").css({left:3*(cWidth/4)|0});
+if(cWidth>768){//if tablet/desktop
+    $("#search-more").css({left:cWidth,height:((cHeight-60)*5/16)|0,width:cWidth});
+    $("#search-more li a").css({height:((cHeight-60)*5/16)|0,width:(cWidth/9)|0});
+    $("#accounts").css({left:-cWidth,top:60+((cHeight-60)*5/16)|0,height:((cHeight-60)*5/16),width:cWidth});
+    $("#accounts li a").css({height:((cHeight-60)*5/16)|0,width:(cWidth/9)|0});
+    $("#chrome").css({left:cWidth,top:60+((cHeight-60)*5/8)|0,height:((cHeight-60)/4),width:cWidth});
     $("#chrome div").css({"margin-top":-($("#chrome div").height())/2});
-    $("#about").css({left:-wWidth,top:60+((wHeight-60)*7/8)|0,height:((wHeight-60)/8),width:wWidth});
-    $("#about li").css({width:(wWidth/5)|0});
+    $("#about").css({left:-cWidth,top:60+((cHeight-60)*7/8)|0,height:((cHeight-60)/8),width:cWidth});
+    $("#about li").css({width:(cWidth/5)|0});
 }
 else{
-    $("#search-more").css({left:wWidth,height:wHeight,width:wWidth});
-    $("#search-more li a").css({height:(wHeight-60)/9,width:wWidth});
-    $("#accounts").css({left:-wWidth,height:wHeight,width:wWidth});
-    $("#accounts li a").css({height:(wHeight-60)/9,width:wWidth});    
-    $("#chrome").css({left:wWidth,height:wHeight,width:wWidth});
-    $("#about").css({left:-wWidth,height:wHeight,width:wWidth});
+    $("#search-more").css({left:cWidth,height:cHeight,width:cWidth});
+    $("#search-more li a").css({height:(cHeight-60)/9,width:cWidth});
+    $("#accounts").css({left:-cWidth,height:cHeight,width:cWidth});
+    $("#accounts li a").css({height:(cHeight-60)/9,width:cWidth});    
+    $("#chrome").css({left:cWidth,height:cHeight,width:cWidth});
+    $("#about").css({left:-cWidth,height:cHeight,width:cWidth});
 }
 var whispers=[{ id:"#search-more",out:0},{ id:"#accounts",out:0},{ id:"#chrome",out:0},{ id:"#about",out:0}];
 $("nav a").click(function(e){
@@ -53,10 +52,10 @@ function slideIn(id){
 }
 function slideOut(id){
     if(id=="#search-more"||id=="#chrome"){
-	slide(wWidth);	
+	slide(cWidth);	
     }
     else if(id=="#accounts"||id=="#about"){
-	slide(-wWidth);	
+	slide(-cWidth);	
     }
     function slide(dimensions){
 	$(id).animate({left:dimensions},{duration:'slow',specialEasing:'easeOutQuint',complete:function(){
