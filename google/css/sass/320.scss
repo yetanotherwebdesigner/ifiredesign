@@ -1,6 +1,7 @@
 $padding:40px;
 $tens:10px;
-#main{
+.js{
+     #main{
        form{ padding-top:191px;width:280px;
              input{
                     width:80%;font-size:13px;padding:2px 0;
@@ -46,4 +47,5 @@ span,a{ float:none;display:block;width:100%;padding:$padding/2 $padding/2 $tens;
                     a{ padding:$tens; }
                     }
                 }
+}
 }

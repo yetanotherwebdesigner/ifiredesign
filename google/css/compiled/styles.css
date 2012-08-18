@@ -155,6 +155,7 @@ nav {
     float: left;
     /* &:before{ content:} */ }
   .no-js #chrome span, .no-js #chrome a {
+    display: block;
     padding: 10px 20px 10px;
     text-align: center;
     font-size: 13px; }

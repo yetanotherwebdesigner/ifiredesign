@@ -1,9 +1,10 @@
 $padding:40px;$chrome-width:177px;$tens:10px;
 #main {
-        form{ padding-top:351px;width:561px;
+        form{ margin-top:351px;width:561px;
               input{ width:373px;font-size:16px;padding:5px 0;}
 }
 }
+.js{
 #search-more a{
  &[href="https://www.google.com/imghp?hl=en"]{ background:#fff url("http://iir.yetanotherwebdesigner.com/google/images/sm-images-text.png") no-repeat 50% 50%; }
 &[href="http://maps.google.com/maps?hl=en"]{ background:darken(#fff,2) url("http://iir.yetanotherwebdesigner.com/google/images/sm-maps-text.png") no-repeat 50% 50%; }
@@ -36,3 +37,4 @@ $padding:40px;$chrome-width:177px;$tens:10px;
                a{ padding:0; }
                }
         }
+}
