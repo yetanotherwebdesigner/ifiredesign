@@ -1,13 +1,13 @@
 $padding:40px;
 $tens:10px;
-.js{
-     #main{
-       form{ padding-top:191px;width:280px;
+#main{top:191px;
+       form{ width:280px;
              input{
-                    width:80%;font-size:13px;padding:2px 0;
+                    font-size:13px;padding:2px 0;
                     }
-             }
-       }
+}
+}
+.js{
 #accounts,#chrome,#about{ top:60px;}
 #search-more{ z-index:60; }
 #search-more a{

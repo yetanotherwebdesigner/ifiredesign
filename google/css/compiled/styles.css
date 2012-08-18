@@ -35,10 +35,9 @@ li {
 /* MAIN */
 #main {
   width: 100%;
-  min-height: 700px;
-  height: 100%;
   text-align: center;
   position: relative;
+  top: 351px;
   z-index: 4; }
   #main ul li {
     float: left;
@@ -249,14 +248,14 @@ canvas {
   top: 0;
   left: 0; }
 
+#dots {
+  z-index: 1; }
+
 #icons {
   z-index: 2; }
 
 #main-balloon {
   z-index: 3; }
-
-#dots {
-  z-index: 1; }
 
 .no-js canvas {
   width: 974px; }
@@ -284,6 +283,9 @@ canvas {
 /* IE FIXES */
 .lt-ie9 #main input {
   display: inline; }
+
+.lt-ie9 {
+  background-image: none; }
 
 .lt-ie8 {
   background: #24320d url("http://iir.yetanotherwebdesigner.com/google/images/thought-balloon.png") no-repeat 40% 80px; }

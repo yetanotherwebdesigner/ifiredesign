@@ -1,14 +1,15 @@
 * BUGS
 
-** TODO ie8
+** DONE ie8
+   CLOSED: [2012-08-18 Sat 16:23]
 
-   form input wrong position again
-   jquery on sliders not working
+   form input wrong position again - O
+   jquery on sliders not working - O
    
 ** TODO ie7
 
-   - jquery -> weird bg image shift
-     - balloon image not centered; or is it the input?
+   - jquery -> weird bg image shift - O (f it)
+   - balloon image not centered
 
 ** TODO Tablets not working - don't understand concept of overflow:hidden;
 ** TODO Ubuntu 8 + FF3.0.6 main balloon not showing at all, jquery wking fine
@@ -73,5 +74,6 @@
    shift about > a up when focused
 
 ** examine reason for slow sliding 2nd time on
-** search-more on the right instead of left
+** DONE search-more on the right instead of left
+   CLOSED: [2012-08-18 Sat 13:37]
 ** code cleanup

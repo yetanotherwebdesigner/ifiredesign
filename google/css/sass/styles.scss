@@ -33,7 +33,7 @@ ul,li{ list-style-type:none; }
 li{ margin:0 2*$tens $tens 2*$tens; }
 /* MAIN */
 #main{
-       width:100%;min-height:700px;height:100%;text-align:center;position:relative;z-index:4;
+       width:100%;text-align:center;position:relative;top:351px;z-index:4;
        ul li{ float:left;display:none;
               padding:{
                         right:10px;
@@ -104,9 +104,9 @@ a{ color:#fff;text-decoration:none;font:{ weight:bold; } }
 }
 /* CANVAS */
 canvas{ position:absolute;top:0;left:0; }
+#dots{ z-index:1; }
 #icons{ z-index:2; }
 #main-balloon{ z-index:3; }
-#dots{ z-index:1; }
 .no-js canvas{ width:$nojs-width; }
 .no-canvas canvas{ width:100%;height:100%; }
 .no-js #main-balloon img,.no-canvas #main-balloon img{ width:650px;display:block;margin:80px auto 0; }
@@ -115,5 +115,6 @@ canvas{ position:absolute;top:0;left:0; }
 .no-canvas #icons{ display:none; }
 /* IE FIXES */
 .lt-ie9 #main input{ display:inline; }
+.lt-ie9{ background-image:none; }
 .lt-ie8 { background:darken($darkgreen-2,10) url("http://iir.yetanotherwebdesigner.com/google/images/thought-balloon.png") no-repeat 40% 80px; }
 .lt-ie8 #main-balloon,.lt-ie8 #dots{ display:none; }

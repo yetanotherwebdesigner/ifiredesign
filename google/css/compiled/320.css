@@ -1,10 +1,11 @@
-.js #main form {
-  padding-top: 191px;
-  width: 280px; }
-  .js #main form input {
-    width: 80%;
-    font-size: 13px;
-    padding: 2px 0; }
+#main {
+  top: 191px; }
+  #main form {
+    width: 280px; }
+    #main form input {
+      font-size: 13px;
+      padding: 2px 0; }
+
 .js #accounts, .js #chrome, .js #about {
   top: 60px; }
 .js #search-more {
