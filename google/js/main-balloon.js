@@ -8,7 +8,7 @@ function init(){
     img=new Image;
     img.onload=handleImageLoad;
     img.onerror=handleImageError;
-    img.src='images/thought-balloon.png';
+    img.src='http://iir.yetanotherwebdesigner.com/google/images/thought-balloon.png';
 }
 // stop or reset 
 function reset(){
