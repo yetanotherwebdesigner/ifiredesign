@@ -1,10 +1,5 @@
 $padding:40px;$chrome-width:177px;$tens:10px;
-#main {top:351px;
-        form{ width:561px;
-              input{ width:373px;font-size:16px;padding:5px 0;}
-}
-}
-.js{
+.js .desktop{/* only for desktop versions that have js enabled */
 #search-more a{
  &[href="https://www.google.com/imghp?hl=en"]{ background:#fff url("http://iir.yetanotherwebdesigner.com/google/images/sm-images-text.png") no-repeat 50% 50%; }
 &[href="http://maps.google.com/maps?hl=en"]{ background:darken(#fff,2) url("http://iir.yetanotherwebdesigner.com/google/images/sm-maps-text.png") no-repeat 50% 50%; }
@@ -15,7 +10,7 @@ $padding:40px;$chrome-width:177px;$tens:10px;
 &[href="http://www.google.com/finance"]{ background:darken(#fff,12) url("http://iir.yetanotherwebdesigner.com/google/images/sm-finance-text.png") no-repeat 50% 50%; }
 &[href="http://video.google.com/?hl=en"]{ background:darken(#fff,16) url("http://iir.yetanotherwebdesigner.com/google/images/sm-videos-text.png") no-repeat 50% 50%; }
 &[href="http://www.google.com/intl/en/options/"]{ background:darken(#fff,18) url("http://iir.yetanotherwebdesigner.com/google/images/sm-more-text.png") no-repeat 50% 50%; } 
-              }
+}
 #accounts a{
 &[href="https://accounts.google.com/ServiceLogin?hl=en&continue=https://www.google.com/"]{ background:darken(#fff,35) url("http://iir.yetanotherwebdesigner.com/google/images/acc-signin-text.png") no-repeat 50% 50%; }
 &[href="https://plus.google.com/?gpsrc=ogpy0"]{ background:darken(#fff,31) url("http://iir.yetanotherwebdesigner.com/google/images/acc-plus-text.png") no-repeat 50% 50%; }
@@ -37,4 +32,4 @@ $padding:40px;$chrome-width:177px;$tens:10px;
                a{ padding:0; }
                }
         }
-}
+}/* ends .desktop */

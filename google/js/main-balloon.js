@@ -1,15 +1,14 @@
 var bCanvas=document.getElementById('main-balloon'),
 balloonCtx=bCanvas.getContext('2d'),mainBalloon=new Image,imgRatio=0.634765625;
 /* EaselJS Enabled Animation */
-var bStage,img,bmp,ratio,goal;
+var bStage,img,bmp,ratio;
 //initialize function
-function init(version){
+function init(){
     ratio=0;
-    goal=(version=="d")?371:211;
     img=new Image;
     img.onload=handleImageLoad;
     img.onerror=handleImageError;
-    img.src=(version=="d")?'images/thought-balloon.png':'images/thought-balloon-m.png';
+    img.src='images/thought-balloon.png';
 }
 // stop or reset 
 function reset(){
@@ -35,7 +34,7 @@ function blowBalloon(){
     bmp.scaleX=bmp.scaleY=0;
     bStage.addChild(bmp);
     Tween.get(bmp,{loop:false})
-    .to({y:goal,scaleX:1,scaleY:1},2000,Ease.get(1))
+    .to({y:371,scaleX:1,scaleY:1},2000,Ease.get(1))
     .call(function(){$('input').fadeIn('fast').focus();});//371=351+20
     Ticker.setFPS(20);
     Ticker.addListener(bStage,false);

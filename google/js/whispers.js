@@ -1,8 +1,8 @@
-$("nav a").css({width:(cWidth/4)|0,right:0,display:"inline"});
-$("nav a+a").css({right:(cWidth/4)|0});
-$("nav a+a+a").css({right:2*(cWidth/4)|0});
-$("nav a+a+a+a").css({right:3*(cWidth/4)|0});
-if(cWidth>768){//if tablet/desktop
+function scriptLayout(){
+    $("nav a").css({width:(cWidth/4)|0,right:0,display:"inline"});
+    $("nav a+a").css({right:(cWidth/4)|0});
+    $("nav a+a+a").css({right:2*(cWidth/4)|0});
+    $("nav a+a+a+a").css({right:3*(cWidth/4)|0});
     $("#search-more").css({right:cWidth,height:((cHeight-60)*5/16)|0,width:cWidth});
     $("#search-more li a").css({height:((cHeight-60)*5/16)|0,width:(cWidth/9)|0});
     $("#accounts").css({left:-cWidth,top:60+((cHeight-60)*5/16)|0,height:((cHeight-60)*5/16),width:cWidth});
@@ -12,16 +12,8 @@ if(cWidth>768){//if tablet/desktop
     $("#about").css({left:-cWidth,top:60+((cHeight-60)*7/8)|0,height:((cHeight-60)/8),width:cWidth});
     $("#about li").css({width:(cWidth/5)|0});
 }
-else{
-    $("#search-more").css({left:cWidth,height:cHeight,width:cWidth});
-    $("#search-more li a").css({height:(cHeight-60)/9,width:cWidth});
-    $("#accounts").css({left:-cWidth,height:cHeight,width:cWidth});
-    $("#accounts li a").css({height:(cHeight-60)/9,width:cWidth});    
-    $("#chrome").css({left:cWidth,height:cHeight,width:cWidth});
-    $("#about").css({left:-cWidth,height:cHeight,width:cWidth});
-}
 var whispers=[{ id:"#search-more",out:0},{ id:"#accounts",out:0},{ id:"#chrome",out:0},{ id:"#about",out:0}];
-$("nav a").click(function(e){
+$(".desktop nav a").click(function(e){
 		     e.preventDefault();
 		     var id=$(this).attr("href").slice(0,-2);
 		     if(whisperHidden(id)==0){
